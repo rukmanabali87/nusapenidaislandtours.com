@@ -31,7 +31,7 @@ export const topDestination = [
     },
     {
         image: '/images/listing/8.jpg',
-        place: 'Waterfall'
+        place: 'nusa penida waterfall'
     },
 ]
 
