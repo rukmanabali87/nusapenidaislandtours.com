@@ -25,7 +25,7 @@ export default function Home() {
             <div className="container relative">
                 <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
                     <div className="lg:col-span-8 md:col-span-7 md:order-1 order-2">
-                        <h5 className="text-3xl !font-dancing text-white">Beauty of Discovers</h5>
+                        <h5 className="text-3xl !font-dancing text-white">Beauty of Discovers nuSA</h5>
                         <h4 className="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5">Lets Leave The Road, <br/> And Take The Travosy</h4>
                         <p className="text-white/70 text-xl max-w-xl">Planning for a trip? We will organize your trip with the best places and within best budget!</p>
                     </div>
