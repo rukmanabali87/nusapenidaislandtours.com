@@ -1,7 +1,7 @@
 {
   "name": "travosy",
   "version": "1.5.0",
-   "description": "Next Js Tour & Travels Agency Tailwind CSS Template",
+  "description": "Next Js Tour & Travels Agency Tailwind CSS Template",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,7 +10,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "15.3.3",
+    "next": "^16.0.7",
     "react": "19.1.0",
     "react-countup": "^6.5.3",
     "react-datepicker": "^8.7.0",
