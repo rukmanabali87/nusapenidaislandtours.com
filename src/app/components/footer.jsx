@@ -97,7 +97,7 @@ export default function Footer(){
                 <div className="container relative text-center">
                     <div className="grid grid-cols-1">
                         <div className="text-center">
-                            <p className="mb-0">© {new Date().getFullYear()} Travosy. Design & Develop with <i className="mdi mdi-heart text-primary-600"></i> by <Link href="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
+                            <p className="mb-0">© {new Date().getFullYear()} PT. Rejeki Utama Kencana <i className="mdi mdi-heart text-primary-600"></i> by <Link href="https://shreethemes.in/" target="_blank" className="text-reset">Shreethemes</Link>.</p>
                         </div>
                     </div>
                 </div>
