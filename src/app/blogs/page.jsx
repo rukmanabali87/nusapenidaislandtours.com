@@ -44,10 +44,10 @@ export default function Blogs(){
                                 </div>
 
                                 <div className="mt-6">
-                                    <div className="flex mb-4">
+                                    {/* <div className="flex mb-4">
                                         <span className="flex items-center text-slate-400 text-sm"><FiClock className="size-4 text-slate-900 dark:text-white me-1.5"></FiClock>5 min read</span>
                                         <span className="text-slate-400 text-sm ms-3">by <Link href="" className="text-slate-900 dark:text-white hover:text-primary dark:hover:text-primary font-medium">Travosy</Link></span>
-                                    </div>
+                                    </div> */}
 
                                     <Link href={`/blog-detail/${item.id}`} className="text-lg font-medium hover:text-primary duration-500 ease-in-out">{item.title}</Link>
                                     <p className="text-slate-400 mt-2">{item.desc}</p>

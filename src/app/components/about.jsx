@@ -40,9 +40,9 @@ export default function About(){
 
                 <div className="md:col-span-7">
                     <div className="lg:ms-8">
-                        <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">World Best Travel <br/> Agency: Travosy</h3>
+                        <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Nusa Penida Island Tours</h3>
 
-                        <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Travosy network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
+                        <p className="text-slate-400 max-w-xl mb-6">Discover the hidden gems of Nusa Penida with our curated day tours. Whether you’re seeking pristine beaches, breathtaking cliffs, or cultural experiences, we make every trip unforgettable. Join over 4,500 happy travelers and explore more than 50 travel packages tailored for every adventurer. Book your adventure today and experience the magic of Nusa Penida like never before.</p>
 
                         <Link href="" className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md">Read More <i className="mdi mdi-chevron-right align-middle ms-0.5"></i></Link>
                     </div>

@@ -40,89 +40,47 @@ export const packages = [
         id: 1,
         image: '/images/listing/1.jpg',
         tagText: '10% Off',
-        place: 'Dubai',
-        title: 'Cuba Sailing Adventure',
-        amount: '$ 58 / Day'
+        place: 'Nusa Penida',
+        title: 'West Nusa Penida Tour',
+        amount: 'From $7.00'
     },
     {
         id: 2,
         image: '/images/listing/2.jpg',
-        place: 'Italy',
-        title: 'Tour in New York',
-        amount: '$ 58 / Day'
+        place: 'Nusa Penida',
+        title: 'East Nusa Penida Tour',
+        amount: 'From $73.00'
     },
     {
         id: 3,
         image: '/images/listing/3.jpg',
-        place: 'Maldivas',
-        title: 'Discover Greece',
-        amount: '$ 58 / Day'
+        place: 'Nusa Penida',
+        title: 'West Nusa Penida + Snorkeling Tour',
+        amount: 'From $73.00'
     },
     {
         id: 4,
         image: '/images/listing/4.jpg',
-        place: 'USA',
-        title: 'Museum of Modern Art',
-        amount: '$ 58 / Day'
+        place: 'Nusa Penida',
+        title: 'West + East Tour Combination',
+        amount: 'From $73.00'
     },
     {
         id: 5,
         image: '/images/listing/5.jpg',
-        place: 'Bali',
-        title: 'Peek Mountain View',
-        amount: '$ 58 / Day'
+        place: 'Nusa Penida',
+        title: 'Snorkeling at Manta Point',
+        amount: 'From $73.00'
     },
     {
         id: 6,
         image: '/images/listing/6.jpg',
         tagText: '25% Off',
-        place: 'Bangkok',
-        title: 'Hot Baloon Journey',
-        amount: '$ 58 / Day'
+        place: 'Nusa Lembongan',
+        title: 'Private Nusa Lembongan Tour',
+        amount: 'From $73.00'
     },
-    {
-        id: 7,
-        image: '/images/listing/7.jpg',
-        place: 'Singapore',
-        title: 'Orca Camp Kayaking Trip',
-        amount: '$ 58 / Day'
-    },
-    {
-        id: 8,
-        image: '/images/listing/8.jpg',
-        tagText: '20% Off',
-        place: 'Thailand',
-        title: 'Caño Cristales River Trip',
-        amount: '$ 58 / Day'
-    },
-    {
-        id: 9,
-        image: '/images/listing/9.jpg',
-        place: 'Pattaya',
-        title: 'Osa Peninsula to Dominical',
-        amount: '$ 58 / Day'
-    },
-    {
-        id: 10,
-        image: '/images/listing/10.jpg',
-        place: 'Lakshadweep',
-        title: 'History of The Emporer',
-        amount: '$ 58 / Day'
-    },
-    {
-        id: 11,
-        image: '/images/listing/11.jpg',
-        place: 'Paris',
-        title: 'Wildness of Paris',
-        amount: '$ 58 / Day'
-    },
-    {
-        id: 12,
-        image: '/images/listing/12.jpg',
-        place: 'London',
-        title: 'The Hills and Mountains',
-        amount: '$ 58 / Day'
-    },
+    
 ]
 
 export const ClientData = [
@@ -169,74 +127,74 @@ export const blogData = [
         id: 1,
         image: '/images/blog/1.jpg',
         date: '13th Sep 2024',
-        title: 'This Spanish city is a feast for the eyes: Travosy',
-        desc: 'This is required when, for example, the final text is not yet available.',
+        title: 'The Natural Wonders of Nusa Penida',
+        desc: 'Nusa Penida is famous for its towering limestone cliffs and stunning white sand beaches. Some must-visit spots',
         tag: 'Travel'
     },
     {
         id: 2,
         image: '/images/blog/2.jpg',
         date: '29th Nov 2024',
-        title: 'New Zealand’s South Island brims with majestic',
-        desc: 'This is required when, for example, the final text is not yet available.',
+        title: 'Travel Tips for Nusa Penida',
+        desc: 'The best way to reach Nusa Penida is by fast boat from Sanur, Bali, and to make the most of your visit',
         tag: 'Tour'
     },
     {
         id: 3,
         image: '/images/blog/3.jpg',
         date: '29th Dec 2024',
-        title: 'When you visit the Eternal Rome City: Travosy',
-        desc: 'This is required when, for example, the final text is not yet available.',
+        title: 'Why Nusa Penida Should Be on Your Bucket List',
+        desc: 'The island offers a unique experience different from mainland Bali: tranquility, raw natural beauty, and thrilling adventures. ',
         tag: 'Tourist'
     },
-    {
-        id: 4,
-        image: '/images/blog/4.jpg',
-        date: '13th March 2024',
-        title: 'My Story When I Backpacked Around The World',
-        desc: 'This is required when, for example, the final text is not yet available.',
-        tag: 'Flight'
-    },
-    {
-        id: 5,
-        image: '/images/blog/5.jpg',
-        date: '5th May 2024',
-        title: 'Organization of accounting at the enterprise',
-        desc: 'This is required when, for example, the final text is not yet available.',
-        tag: 'Arab'
-    },
-    {
-        id: 6,
-        image: '/images/blog/6.jpg',
-        date: '19th June 2024',
-        title: 'Three of the Best Day Trips to Make from Francisco',
-        desc: 'This is required when, for example, the final text is not yet available.',
-        tag: 'Dubai'
-    },
-    {
-        id: 7,
-        image: '/images/blog/7.jpg',
-        date: '20th June 2024',
-        title: 'Why Do People Travel ? Reasons People Travel in 2023',
-        desc: 'This is required when, for example, the final text is not yet available.',
-        tag: 'Maldivas'
-    },
-    {
-        id: 8,
-        image: '/images/blog/8.jpg',
-        date: '31st Aug 2024',
-        title: 'Jungles In Australia: Vermont’s Rugged, Retro Ski Mountain',
-        desc: 'This is required when, for example, the final text is not yet available.',
-        tag: 'News'
-    },
-    {
-        id: 9,
-        image: '/images/blog/9.jpg',
-        date: '1st Sep 2024',
-        title: 'Traveller Visiting Ice Cave With Amazing Eye-catching Scenes',
-        desc: 'This is required when, for example, the final text is not yet available.',
-        tag: 'Packages'
-    },
+    // {
+    //     id: 4,
+    //     image: '/images/blog/4.jpg',
+    //     date: '13th March 2024',
+    //     title: 'My Story When I Backpacked Around The World',
+    //     desc: 'This is required when, for example, the final text is not yet available.',
+    //     tag: 'Flight'
+    // },
+    // {
+    //     id: 5,
+    //     image: '/images/blog/5.jpg',
+    //     date: '5th May 2024',
+    //     title: 'Organization of accounting at the enterprise',
+    //     desc: 'This is required when, for example, the final text is not yet available.',
+    //     tag: 'Arab'
+    // },
+    // {
+    //     id: 6,
+    //     image: '/images/blog/6.jpg',
+    //     date: '19th June 2024',
+    //     title: 'Three of the Best Day Trips to Make from Francisco',
+    //     desc: 'This is required when, for example, the final text is not yet available.',
+    //     tag: 'Dubai'
+    // },
+    // {
+    //     id: 7,
+    //     image: '/images/blog/7.jpg',
+    //     date: '20th June 2024',
+    //     title: 'Why Do People Travel ? Reasons People Travel in 2023',
+    //     desc: 'This is required when, for example, the final text is not yet available.',
+    //     tag: 'Maldivas'
+    // },
+    // {
+    //     id: 8,
+    //     image: '/images/blog/8.jpg',
+    //     date: '31st Aug 2024',
+    //     title: 'Jungles In Australia: Vermont’s Rugged, Retro Ski Mountain',
+    //     desc: 'This is required when, for example, the final text is not yet available.',
+    //     tag: 'News'
+    // },
+    // {
+    //     id: 9,
+    //     image: '/images/blog/9.jpg',
+    //     date: '1st Sep 2024',
+    //     title: 'Traveller Visiting Ice Cave With Amazing Eye-catching Scenes',
+    //     desc: 'This is required when, for example, the final text is not yet available.',
+    //     tag: 'Packages'
+    // },
 ]
 
 export const footerSocial = [

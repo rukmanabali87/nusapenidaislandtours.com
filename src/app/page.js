@@ -81,7 +81,7 @@ export default function Home() {
                                         </div>
 
                                         <div className="mt-4 pt-4 flex justify-between items-center border-t border-slate-100 dark:border-gray-800">
-                                            <h5 className="text-lg font-medium text-primary">$ 58 / Day</h5>
+                                            <h5 className="text-lg font-medium text-primary">{item.amount}</h5>
 
                                             <Link href="" className="text-slate-400 hover:text-primary">Explore Now <i className="mdi mdi-arrow-right"></i></Link>
                                         </div>
