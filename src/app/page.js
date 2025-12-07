@@ -20,7 +20,7 @@ export default function Home() {
         <>
             <Tagline />
             <Navbar navclass="defaultscroll is-sticky tagline-height" navlight={true} manuclass="!justify-end nav-light" />
-            <section className="relative md:pt-72 md:pb-60 py-36 table w-full items-center bg-[url('/images/bg/1.jpg')] bg-top bg-no-repeat bg-cover">
+            {/* <section className="relative md:pt-72 md:pb-60 py-36 table w-full items-center bg-[url('/images/bg/1.jpg')] bg-top bg-no-repeat bg-cover">
                 <div className="absolute inset-0 bg-slate-900/40"></div>
                 <div className="container relative">
                     <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
@@ -33,6 +33,52 @@ export default function Home() {
                         <VideoModalOne />
                     </div>
                 </div>
+            </section> */}
+            <section className="relative w-full h-screen overflow-hidden">
+
+                {/* Fallback Image */}
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: "url('/images/hero.jpg')" }}
+                />
+
+                {/* Video */}
+                <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="none"
+                    className="absolute inset-0 w-full h-full object-cover"
+                >
+                    <source src="/video/nuspen.mp4" type="video/mp4" />
+                </video>
+
+                {/* Overlay */}
+                {/* <div className="absolute inset-0 bg-black/50"></div> */}
+                <div className="absolute inset-0 bg-slate-900/40"></div>
+                <div className="container relative h-full flex items-center">
+                    <div className="grid md:grid-cols-12 grid-cols-1 items-center w-full gap-[30px]">
+
+                        <div className="lg:col-span-8 md:col-span-7">
+                            <h5 className="text-3xl !font-dancing text-white mb-4">
+                                Discover the Beauty of Nusa Penida
+                            </h5>
+
+                            <h4 className="font-bold text-white lg:leading-normal leading-tight text-4xl lg:text-6xl mb-6">
+                                Leave the Road, <br /> Sail to the Island
+                            </h4>
+
+                            <p className="text-white/80 text-xl max-w-xl">
+                                Dreaming of a tropical escape? Let us design your perfect island adventure.
+                            </p>
+                        </div>
+
+                        {/* <VideoModalOne /> */}
+
+                    </div>
+                </div>
+
             </section>
             <div className="container relative -mt-16 z-1">
                 <Form />
@@ -67,6 +113,7 @@ export default function Home() {
                                     <div className="p-4">
                                         <p className="flex items-center text-slate-400 font-medium mb-2"><FiMapPin className="text-primary size-4 me-1"></FiMapPin> {item.place}</p>
                                         <Link href={`/tour-detail-one/${item.id}`} className="text-lg font-medium hover:text-primary duration-500 ease-in-out">{item.title}</Link>
+                                        {/* <Link href={`/tour-detail-two`} className="text-lg font-medium hover:text-primary duration-500 ease-in-out">{item.title}</Link> */}
 
                                         <div className="flex items-center mt-2">
                                             <span className="text-slate-400">Rating:</span>
