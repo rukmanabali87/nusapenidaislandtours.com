@@ -162,33 +162,16 @@ export default function classNavbar({navclass, navlight, manuclass}){
                             </ul>
                         </li> */}
 
-                        <li className={`has-submenu parent-parent-menu-item ${['/grid','/grid-left-sidebar','/grid-right-sidebar','/list','/list-left-sidebar','/list-right-sidebar','/tour-detail-one','/tour-detail-two','/listing-item','/grid-item','/list-item','/detail-item'].includes(manu) ? 'active' : '' }`}><Link href="" onClick={()=>setSubManu(subManu === '/listing-item' ? '' : '/listing-item' )}> Listing </Link><span className="menu-arrow"></span>
+                        <li className={`has-submenu parent-parent-menu-item ${['/grid','/grid-left-sidebar','/grid-right-sidebar','/list','/list-left-sidebar','/list-right-sidebar','/tour-detail-one','/tour-detail-two','/listing-item','/grid-item','/list-item','/detail-item'].includes(manu) ? 'active' : '' }`}><Link href="" onClick={()=>setSubManu(subManu === '/listing-item' ? '' : '/listing-item' )}> Tour </Link><span className="menu-arrow"></span>
                             <ul className={`submenu ${['/grid','/grid-left-sidebar','/grid-right-sidebar','/list','/list-left-sidebar','/list-right-sidebar','/tour-detail-one','/tour-detail-two','/listing-item','/grid-item','/list-item','/detail-item'].includes(subManu) ? 'open' : '' }`}>
-                                <li className={`has-submenu parent-menu-item ${['/grid','/grid-left-sidebar','/grid-right-sidebar','/grid-item'].includes(manu) ? 'active' : ''}`}>
-                                    <Link href="" onClick={()=>setSubManu(subManu === '/grid-item' ? '' : '/grid-item')}>Tour Grid </Link><span className="submenu-arrow"></span>
-                                    <ul className={`submenu ${['/grid','/grid-left-sidebar','/grid-right-sidebar','/grid-item'].includes(subManu) ? 'open' : ''}`}>
-                                        <li className={`${manu === '/grid' ? 'active' : '' }`}><Link href="/grid" className="sub-menu-item">Grid</Link></li>
-                                        <li className={`${manu === '/grid-left-sidebar' ? 'active' : '' }`}><Link href="/grid-left-sidebar" className="sub-menu-item">Grid Left Sidebar</Link></li>
-                                        <li className={`${manu === '/grid-right-sidebar' ? 'active' : '' }`}><Link href="/grid-right-sidebar" className="sub-menu-item">Grid Right Sidebar</Link></li>
-                                    </ul>  
-                                </li>
-
-                                <li className={`has-submenu parent-menu-item ${['/list-item','/list','/list-left-sidebar','/list-right-sidebar'].includes(manu) ? 'active' : ''}`}>
-                                    <Link href="" onClick={()=>setSubManu(subManu === '/list-item' ? '' : '/list-item')}>Tour List </Link><span className="submenu-arrow"></span>
-                                    <ul className={`submenu ${['/list-item','/list','/list-left-sidebar','/list-right-sidebar'].includes(subManu) ? 'open' : ''}`}>
-                                        <li className={`${manu === '/list' ? 'active' : '' }`}><Link href="/list" className="sub-menu-item">List</Link></li>
-                                        <li className={`${manu === '/list-left-sidebar' ? 'active' : '' }`}><Link href="/list-left-sidebar" className="sub-menu-item">List Left Sidebar</Link></li>
-                                        <li className={`${manu === '/list-right-sidebar' ? 'active' : '' }`}><Link href="/list-right-sidebar" className="sub-menu-item">List Right Sidebar</Link></li>
-                                    </ul>  
-                                </li>
-
-                                <li className={`has-submenu parent-menu-item ${['/detail-item','/tour-detail-one','/tour-detail-two'].includes(manu) ? 'active' : ''}`}>
-                                    <Link href="" onClick={()=>setSubManu(subManu === '/detail-item' ? '' : '/detail-item')}> Tour Detail </Link><span className="submenu-arrow"></span>
-                                    <ul className={`submenu ${['/detail-item','/tour-detail-one','/tour-detail-two'].includes(subManu) ? 'open' : ''}`}>
-                                        <li className={`${manu === '/tour-detail-one' ? 'active' : '' }`}><Link href="/tour-detail-one" className="sub-menu-item">Tour Detail One</Link></li>
-                                        <li className={`${manu === '/tour-detail-two' ? 'active' : '' }`}><Link href="/tour-detail-two" className="sub-menu-item">Tour Detail Two</Link></li>
-                                    </ul>  
-                                </li>
+                             <li className={`${manu === '/tour/west-nusa-penida-tour' ? 'active' : '' }`}><Link href="/tour/west-nusa-penida-tour" className="sub-menu-item">West Nusa Penida Tour</Link></li>
+                             <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">East Nusa Penida Tour</Link></li>
+                             <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">West Nusa Penida + Snorkeling Tour</Link></li>
+                             <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">West + East Tour Combination</Link></li>
+                             <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">Snorkeling at Manta Point</Link></li>
+                             <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">Private Nusa Lembongan Tour</Link></li>
+                            
+                               
                             </ul>
                         </li>
                 
