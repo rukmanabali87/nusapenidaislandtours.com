@@ -1,29 +1,48 @@
 import React from "react";
+import Link from "next/link";
 
 import Navbar from "../../components/navbar";
 import DetailSidebar from "../../components/detail-sidebar";
 import Footer from "../../components/footer";
 import Switcher from "../../components/switcher";
-import TourImageTwo from "../../components/tour-image-two";
+import TourImageOne from "../../components/tour-image-one";
 import TourDetailFaq from "../../components/faq/tour-detail-faq";
 
-import { FiMapPin } from 'react-icons/fi'
+import { FiMapPin} from 'react-icons/fi'
 
-import { tourDetailAbout } from "../../data/data";
+import { tourDetailAbout, packages } from "../../data/data";
 
-export default function TourDetailTwo(){
+export default function TourDetailOne(props){
+    let id = props.params.id
+    let data = packages.find((item)=>item.id === parseInt(id))
+
     return(
         <>
-        <Navbar navclass="defaultscroll is-sticky" navlight={false} manuclass="!justify-end"/>
-
-        <section className="relative md:pb-24 pb-16 mt-20">
-           <TourImageTwo/>
-
-            <div className="container relative md:mt-24 mt-16">
+         <Navbar navclass="defaultscroll is-sticky" navlight={true} manuclass="!justify-end nav-light"/>
+        <section className="relative table w-full items-center py-36 bg-[url('/images/bg/cta.jpg')] bg-top bg-no-repeat bg-cover">
+            <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
+            <div className="container relative">
+                <div className="grid grid-cols-1 pb-8 text-center mt-10">
+                    <h3 className="text-3xl leading-normal tracking-wider font-semibold text-white">{data?.title}</h3>
+                </div>
+            </div>
+            
+            <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+                <ul className="tracking-[0.5px] mb-0 inline-block">
+                    <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><Link href="/">Travosy</Link></li>
+                    <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i className="mdi mdi-chevron-right"></i></li>
+                    <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">Tour</li>
+                </ul>
+            </div>
+        </section>
+        <section className="relative md:py-24 py-16">
+            <div className="container relative">
                 <div className="grid md:grid-cols-12 grid-cols-1 gap-6">
                     <div className="lg:col-span-8 md:col-span-7">
-                        <h5 className="text-2xl font-semibold">West Nusa Penida Tour</h5>
-                        <p className="flex items-center text-slate-400 font-medium mt-2"><FiMapPin className="size-4 me-1"></FiMapPin> New Zealand</p>
+                        <TourImageOne/>
+
+                        <h5 className="text-2xl font-semibold mt-5">{data?.title}</h5>
+                        <p className="flex items-center text-slate-400 font-medium mt-2"><FiMapPin className="size-4 me-1"></FiMapPin>New Zealand</p>
 
                         <ul className="list-none">
                             {tourDetailAbout.map((item,index)=>{
@@ -65,7 +84,7 @@ export default function TourDetailTwo(){
                                             <input name="name" id="name" type="text" className="mt-3 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="Name :"/>
                                         </div>
                                     </div>
-
+    
                                     <div className="lg:col-span-6 mb-5">
                                         <div className="text-left">
                                             <label htmlFor="email" className="font-semibold">Your Email:</label>
@@ -93,7 +112,6 @@ export default function TourDetailTwo(){
         </section>
         <Footer/>
         <Switcher/>
-
         </>
     )
 }
