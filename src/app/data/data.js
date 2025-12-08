@@ -234,25 +234,22 @@ export const footerCompany = [
         link: '/aboutus'
     },
     {
-        name: 'Services',
+        name: 'Term & Condition',
         link: '/services'
     },
     {
-        name: 'Team',
+        name: 'Partner',
         link: '/team'
     },
     {
-        name: 'Pricing',
-        link: '/pricing'
+        name: 'Become a Reseller',
+        link: '/team'
     },
     {
         name: 'Blog',
         link: '/blogs'
     },
-    {
-        name: ' Login',
-        link: '/login'
-    },
+    
 ]
 
 export const placeImage = [
