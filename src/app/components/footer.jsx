@@ -17,7 +17,7 @@ export default function Footer() {
                 <div className="lg:col-span-3 md:col-span-12">
                   <Link href="#" className="text-[22px] focus:outline-none">
                     <Image
-                      src="/images/logo-light.png"
+                      src="/images/logo-ligh.png"
                       width={133}
                       height={28}
                       alt=""
@@ -25,7 +25,7 @@ export default function Footer() {
                   </Link>
                   <p className="mt-6 text-gray-300">
                     Planning for a trip? We will organize your trip with the
-                    best places and within best budget!
+                    best places and within best
                   </p>
                   <ul className="list-none mt-6 space-x-1">
                     {footerSocial.map((item, index) => {

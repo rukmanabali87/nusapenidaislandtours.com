@@ -14,10 +14,10 @@ export default function Tagline(){
                                 <FiClock className="text-primary size-4"></FiClock>
                                 <span className="ms-2 text-slate-300">Mon-Sat: 9am to 6pm</span>
                             </li>
-                            <li className="inline-flex items-center ms-2">
+                            {/* <li className="inline-flex items-center ms-2">
                                 <FiMapPin className="text-primary size-4"></FiMapPin>
                                 <span className="ms-2 text-slate-300">Houston, USA 485</span>
-                            </li>
+                            </li> */}
                         </ul>
 
                         <ul className="list-none">

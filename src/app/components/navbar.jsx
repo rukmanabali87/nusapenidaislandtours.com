@@ -62,7 +62,7 @@ export default function classNavbar({navclass, navlight, manuclass}){
                     <Link className="logo" href="/">
                         <span className="inline-block dark:hidden">
                             <Image src='/images/logo-dark.png' width={133} height={28} className="h-7 l-dark" alt=""/>
-                            <Image src='/images/logo-light.png' width={133} height={28} className="h-7 l-light" alt=""/>
+                            <Image src='/images/logo-ligh.png' width={133} height={28} className="h-7 l-light" alt=""/>
                         </span>
                         <Image src='/images/logo-white.png' width={133} height={28} className="hidden dark:inline-block" alt=""/>
                     </Link>
