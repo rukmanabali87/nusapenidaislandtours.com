@@ -12,7 +12,7 @@ export default function Blogs(){
                 <div className="grid grid-cols-1 pb-6 text-center">
                     <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Travel Blogs</h3>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                    <p className="text-slate-400 max-w-xl mx-auto">Discover inspiring stories, travel tips, and hidden gems from Bali and beyond. Explore unforgettable journeys, stunning destinations, and practical guides to help you plan your perfect adventure..</p>
                 </div>
 
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">

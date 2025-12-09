@@ -1,7 +1,7 @@
 {
-  "name": "travosy",
+  "name": "Nusa Penida Island Tours",
   "version": "1.5.0",
-  "description": "Next Js Tour & Travels Agency Tailwind CSS Template",
+  "description": "Nusa Penida Island Tours – Best Private Tour & Snorkeling Packages",
   "private": true,
   "scripts": {
     "dev": "next dev",

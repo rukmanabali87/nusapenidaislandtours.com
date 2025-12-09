@@ -13,8 +13,8 @@ const dm_sans = DM_Sans({
    });
 
 export const metadata = {
-  title: "Travosy - Next Js Tour & Travels Agency Tailwind CSS Template",
-  description: "Next Js Tour & Travels Agency Tailwind CSS Template",
+  title: "Nusa Penida Island Tours – Best Private Tour & Snorkeling Packages",
+  description: "Book the best Nusa Penida Island tours with private driver, snorkeling at Manta Point, fast boat tickets, and customizable Bali tour packages.",
 };
 
 export default function RootLayout({ children }) {
