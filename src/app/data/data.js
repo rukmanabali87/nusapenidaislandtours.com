@@ -80,7 +80,7 @@ export const packages = [
         title: 'Private Nusa Lembongan Tour',
         amount: 'From $73.00'
     },
-    
+
 ]
 
 export const ClientData = [
@@ -249,7 +249,7 @@ export const footerCompany = [
         name: 'Blog',
         link: '/blogs'
     },
-    
+
 ]
 
 export const placeImage = [
@@ -259,29 +259,29 @@ export const placeImage = [
 export const faqData = [
     {
         id: 1,
-        title: 'How does it work ?',
-        desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+        title: 'Is this tour private?',
+        desc: 'Yes. You will have your own private car and driver for the entire day.'
     },
     {
         id: 2,
-        title: 'Do I need a designer to use Travosy ?',
-        desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+        title: 'Can I customize the itinerary?',
+        desc: 'Absolutely. You can add East Nusa Penida or snorkeling sessions. but discuss first with operator maybe need a more payment'
     },
     {
         id: 3,
-        title: 'What do I need to do to start selling ?',
-        desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+        title: 'Is it suitable for children or elderly?',
+        desc: ' Yes. All locations are accessible without hiking down Kelingking.'
     },
-    {
-        id: 4,
-        title: 'What happens when I receive an order ?',
-        desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
-    },
-    {
-        id: 5,
-        title: 'How does it work ?',
-        desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
-    },
+    // {
+    //     id: 4,
+    //     title: 'What happens when I receive an order ?',
+    //     desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+    // },
+    // {
+    //     id: 5,
+    //     title: 'How does it work ?',
+    //     desc: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.'
+    // },
 ]
 
 export const tourDetailAbout = [

@@ -1,12 +1,15 @@
 import React from "react";
 import Link from "next/link";
 
+
 import Navbar from "../../components/navbar";
+
 import DetailSidebar from "../../components/detail-sidebar";
 import Footer from "../../components/footer";
 import Switcher from "../../components/switcher";
 import TourImageOne from "../../components/tour-image-one";
 import TourDetailFaq from "../../components/faq/tour-detail-faq";
+import Client from "../../components/client-page";
 import { FiShoppingCart, FiDribbble, FiLinkedin, FiFacebook, FiInstagram, FiTwitter, FiMail, FiClock, FiActivity, FiUsers, FiGlobe, FiDollarSign, FiYoutube, FiHelpCircle, FiBookmark, FiSettings, FiGithub, FiGitlab } from "react-icons/fi"
 
 
@@ -127,60 +130,118 @@ export default function TourDetailOne(props) {
                             <div className="mt-6">
                                 <h5 className="text-lg font-semibold">Tour Descriptions:</h5>
 
-                                <p className="text-slate-400 mt-6">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script.</p>
-                                <p className="text-slate-400 mt-3">The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
+                                <p className="text-slate-400 mt-6">
+                                    Experience the beauty of West Nusa Penida on a private and comfortable full-day tour.
+                                    This trip takes you to the island’s most iconic landmarks, including Kelingking Beach,
+                                    Broken Beach, Angel’s Billabong, and Crystal Bay. Each location offers breathtaking
+                                    cliff views, turquoise waters, and perfect photo opportunities for couples, families,
+                                    and adventure travelers.
+                                </p>
+
+                                <p className="text-slate-400 mt-3">
+                                    During the tour, you will travel in a private air-conditioned car with a friendly
+                                    English-speaking local driver who will guide you to each destination. Fast boat tickets
+                                    from Sanur to Nusa Penida are included, ensuring a smooth and hassle-free journey.
+                                    Whether you're looking for relaxation or adventure, this tour provides the perfect
+                                    blend of comfort, flexibility, and unforgettable scenery.
+                                </p>
+
+                                <p className="text-slate-400 mt-3">
+                                    This tour is ideal for travelers who want a safe, customizable, and private experience
+                                    on one of Bali’s most beautiful islands. With transparent pricing and no hidden fees,
+                                    you can enjoy the day stress-free while exploring the best highlights of West Nusa Penida.
+                                </p>
                             </div>
 
-                            <div className="mt-6">
-                                <h5 className="text-lg font-semibold">Tour Descriptions:</h5>
+                            <div className="mt-10">
+                                <h3 className="text-2xl font-semibold mb-4">Tour Highlights</h3>
 
-                                <p className="text-slate-400 mt-6">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script.</p>
-                                <p className="text-slate-400 mt-3">The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                    <div className="p-5 border rounded-xl shadow-sm bg-white">
+                                        <h4 className="font-bold text-lg">Private Car & Driver</h4>
+                                        <p className="text-slate-500 mt-2">Explore comfortably with an expert local island driver.</p>
+                                    </div>
+
+                                    <div className="p-5 border rounded-xl shadow-sm bg-white">
+                                        <h4 className="font-bold text-lg">Fast Boat Tickets Included</h4>
+                                        <p className="text-slate-500 mt-2">Round-trip fast boat from Sanur to Nusa Penida.</p>
+                                    </div>
+
+                                    <div className="p-5 border rounded-xl shadow-sm bg-white">
+                                        <h4 className="font-bold text-lg">Top Destinations</h4>
+                                        <p className="text-slate-500 mt-2">Visit Kelingking, Broken Beach, Angel Billabong, and Crystal Bay.</p>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div className="mt-10">
+                                <h3 className="text-2xl font-semibold mb-4">Tour Itinerary</h3>
+
+                                <ul className="border-l-4 border-blue-500 pl-6 space-y-4">
+                                    <li>
+                                        <h4 className="font-bold">08:00 – Fast Boat Check-In</h4>
+                                        <p className="text-slate-500">Meet our team at Sanur Harbor.</p>
+                                    </li>
+                                    <li>
+                                        <h4 className="font-bold">10:00 – Broken Beach</h4>
+                                        <p className="text-slate-500">Iconic natural rock arch with ocean views.</p>
+                                    </li>
+                                    <li>
+                                        <h4 className="font-bold">11:00 – Angel’s Billabong</h4>
+                                        <p className="text-slate-500">A beautiful natural infinity pool.</p>
+                                    </li>
+                                    <li>
+                                        <h4 className="font-bold">13:00 – Kelingking Beach</h4>
+                                        <p className="text-slate-500">The famous T-Rex cliff viewpoint.</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                                <div>
+                                    <h3 className="text-2xl font-semibold mb-4">Included</h3>
+                                    <ul className="space-y-2 text-slate-600">
+                                        <li>✔️ Private Car & Driver</li>
+                                        <li>✔️ Return Fast Boat Ticket</li>
+                                        <li>✔️ Entrance Fees</li>
+                                        <li>✔️ Parking Fees</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h3 className="text-2xl font-semibold mb-4">Not Included</h3>
+                                    <ul className="space-y-2 text-slate-600">
+                                        <li>❌ Meals</li>
+                                        <li>❌ Personal expenses</li>
+                                        <li>❌ Travel insurance</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+
+                            <a href="https://www.tripadvisor.com/YourBusinessPage" target="_blank" rel="noopener noreferrer">
+                                See our reviews on TripAdvisor
+                            </a>
+
 
                             <div className="mt-6">
                                 <h5 className="text-lg font-semibold">Questions & Answers:</h5>
 
                                 <TourDetailFaq />
                             </div>
+                            <Client />
 
-                            <div className="mt-6">
-                                <h5 className="text-lg font-semibold">Leave A Comment:</h5>
 
-                                <form className="mt-6">
-                                    <div className="grid lg:grid-cols-12 lg:gap-6">
-                                        <div className="lg:col-span-6 mb-5">
-                                            <div className="text-left">
-                                                <label htmlFor="name" className="font-semibold">Your Name:</label>
-                                                <input name="name" id="name" type="text" className="mt-3 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="Name :" />
-                                            </div>
-                                        </div>
-
-                                        <div className="lg:col-span-6 mb-5">
-                                            <div className="text-left">
-                                                <label htmlFor="email" className="font-semibold">Your Email:</label>
-                                                <input name="email" id="email" type="email" className="mt-3 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="Email :" />
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="grid grid-cols-1">
-                                        <div className="mb-5">
-                                            <div className="text-left">
-                                                <label htmlFor="comments" className="font-semibold">Your Comment:</label>
-                                                <textarea name="comments" id="comments" className="mt-3 w-full py-2 px-3 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0 h-28" placeholder="Message :"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="submit" id="submit" name="send" className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md w-full">Send Message</button>
-                                </form>
-                            </div>
                         </div>
 
                         <DetailSidebar />
                     </div>
                 </div>
             </section>
+
             <Footer />
             <Switcher />
         </>
