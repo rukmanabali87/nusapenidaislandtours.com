@@ -12,6 +12,38 @@ import { FiMapPin} from 'react-icons/fi'
 
 import { tourDetailAbout, packages } from "../../data/data";
 
+export const metadata = {
+  title: "West Nusa Penida Tour – Private Day Trip with Local Driver",
+  description:
+    "Experience the best West Nusa Penida Tour. Visit Kelingking Beach, Broken Beach, Angel’s Billabong, and Crystal Bay. Private driver, fast boat tickets, hotel pickup included.",
+  keywords: [
+    "west nusa penida tour",
+    "nusa penida tour",
+    "private nusa penida tour",
+    "nusa penida day trip",
+    "kelingking beach tour"
+  ],
+  alternates: {
+    canonical: "https://www.nusapenidaislandtours.com/tour/west-nusa-penida-tour"
+  },
+  openGraph: {
+    title: "West Nusa Penida Tour – Private Day Trip",
+    description:
+      "Explore the western side of Nusa Penida including Kelingking Beach, Broken Beach, Angel’s Billabong, and Crystal Bay with a private driver.",
+    url: "https://www.nusapenidaislandtours.com/tour/west-nusa-penida-tour",
+    siteName: "Nusa Penida Island Tours",
+    images: [
+      {
+        url: "https://www.nusapenidaislandtours.com/images/west-penida.jpg",
+        width: 1200,
+        height: 630
+      }
+    ],
+    type: "article"
+  }
+};
+
+
 export default function TourDetailOne(props){
     let id = props.params.id
     let data = packages.find((item)=>item.id === parseInt(id))
