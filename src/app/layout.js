@@ -3,14 +3,14 @@ import "./assets/css/tailwind.css";
 import "./assets/css/materialdesignicons.min.css";
 
 const dm_sans = DM_Sans({
-   subsets: ["latin"],
-   variable: '--font-dm-sans',
-  });
+  subsets: ["latin"],
+  variable: '--font-dm-sans',
+});
 
-  const dancing_script = Dancing_Script({
-    subsets: ["latin"],
-    variable: '--font-dancing_script',
-   });
+const dancing_script = Dancing_Script({
+  subsets: ["latin"],
+  variable: '--font-dancing_script',
+});
 
 export const metadata = {
   title: "Nusa Penida Island Tours – Best Private Tour & Snorkeling Packages",
@@ -24,3 +24,8 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+<script
+  src="https://app.sandbox.midtrans.com/snap/snap.js"
+  data-client-key={process.env.NEXT_PUBLIC_MIDTRANS_CLIENT_KEY}
+/>
