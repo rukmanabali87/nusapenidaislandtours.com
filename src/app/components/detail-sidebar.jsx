@@ -1,64 +1,121 @@
 'use client'
-import React, { useState } from 'react';
 
-import {FiUser, FiUsers} from "react-icons/fi"
+import React, { useState } from 'react'
+import { FiUser } from "react-icons/fi"
+import DatePicker from "react-datepicker"
+import "react-datepicker/dist/react-datepicker.css"
+import { useRouter } from "next/navigation"
 
-import DatePicker from "react-datepicker";
-import "../../../node_modules/react-datepicker/dist/react-datepicker.css";
+export default function DetailSidebar() {
+    const router = useRouter()
 
-export default function DetailSidebar(){
-      const [startDate, setStartDate] = useState(new Date());
-    return(
+    const [startDate, setStartDate] = useState(new Date())
+    const [adult, setAdult] = useState(1)
+    const [showTours, setShowTours] = useState(false)
+
+    const tours = [
+        {
+            id: "west",
+            title: "West Nusa Penida Tour",
+            desc: "Kelingking, Broken Beach, Angel’s Billabong",
+            price: 65
+        },
+        {
+            id: "east",
+            title: "East Nusa Penida Tour",
+            desc: "Diamond Beach, Atuh Beach, Tree House",
+            price: 70
+        },
+        {
+            id: "combo",
+            title: "Combination Tour",
+            desc: "West & East Highlights",
+            price: 95
+        }
+    ]
+
+    const handleCheckAvailability = () => {
+        if (adult < 1) {
+            alert("Minimum 1 adult")
+            return
+        }
+        setShowTours(true)
+    }
+
+    const handleSelectTour = (tour) => {
+        router.push(
+            `/booking?tour=${tour.id}&date=${startDate.toISOString().split('T')[0]}&adult=${adult}`
+        )
+    }
+
+    return (
         <div className="lg:col-span-4 md:col-span-5">
             <div className="p-4 rounded-md shadow dark:shadow-gray-700 sticky top-20">
+
+                {/* DATE */}
                 <div className='flex flex-col'>
                     <label className="font-semibold">Date:</label>
-                    <DatePicker className="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0 start" selected={startDate} onChange={(date) => setStartDate(date)} />
+                    <DatePicker
+                        selected={startDate}
+                        onChange={(date) => setStartDate(date)}
+                        className="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800"
+                        dateFormat="yyyy-MM-dd"
+                        minDate={new Date()}
+                    />
                 </div>
 
+                {/* ADULT */}
+                <div className="mt-4 md:flex items-center">
+                    <div className="md:w-1/3">
+                        <span className="font-medium">Adult:</span>
+                    </div>
+
+                    <div className="md:w-2/3 mt-4 md:mt-0">
+                        <div className="relative">
+                            <FiUser className="w-4 h-4 absolute top-3 left-4" />
+                            <input
+                                type="number"
+                                min="1"
+                                value={adult}
+                                onChange={(e) => setAdult(Number(e.target.value))}
+                                className="w-full pl-10 py-2 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800"
+                                placeholder="No. of person"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                {/* BUTTON */}
                 <div className="mt-4">
-                    <div className="md:flex">
-                        <div className="md:w-1/3">
-                            <span className="font-medium">Adult:</span>
-                        </div>
-
-                        <div className="md:w-2/3 mt-4 md:mt-0">
-                            <form>
-                                <div className="form-icon relative">
-                                    <FiUser className="w-4 h-4 absolute top-3 start-4"></FiUser>
-                                    <input type="number" className="w-full ps-12 py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="No. of person" id="Noperson" name="number" required=""/>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    
-                    <div className="md:flex mt-4">
-                        <div className="md:w-1/3">
-                            <span className="font-medium">Child:</span>
-                        </div>
-
-                        <div className="md:w-2/3 mt-4 md:mt-0">
-                            <form>
-                                <div className="form-icon relative">
-                                    <FiUsers className="w-4 h-4 absolute top-3 start-4"></FiUsers>
-                                    <input type="number" className="w-full ps-12 py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="No. of children" id="Nochildren" name="number" required=""/>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    <button
+                        onClick={handleCheckAvailability}
+                        className="py-2 px-5 w-full bg-primary text-white rounded-md hover:bg-primary/90 transition"
+                    >
+                        Check availability
+                    </button>
                 </div>
 
-                <div className="mt-4">
-                    <button className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md w-full">Search Now</button>
-                </div>
+                {/* TOUR OPTIONS */}
+                {showTours && (
+                    <div className="mt-6 space-y-3">
+                        <h4 className="font-semibold text-lg">Available Tours</h4>
 
-                <div className="mt-6">
-                    <h5 className="text-lg font-medium">Tour Map</h5>
-
-                    <div className="mt-3">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" style={{border:'0'}} title="travosy" className="w-full h-[300px] rounded-full"></iframe>
+                        {tours.map((tour) => (
+                            <div
+                                key={tour.id}
+                                onClick={() => handleSelectTour(tour)}
+                                className="border rounded-md p-3 cursor-pointer hover:shadow-md transition"
+                            >
+                                <h5 className="font-semibold">{tour.title}</h5>
+                                <p className="text-sm text-slate-500">{tour.desc}</p>
+                                <p className="font-medium text-primary mt-1">
+                                    ${tour.price * adult} ({adult} adult)
+                                </p>
+                            </div>
+                        ))}
                     </div>
-                </div>
+                )}
+
             </div>
         </div>
     )
