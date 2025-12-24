@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
+import Image from "next/image";
+
 
 import Navbar from "../../components/navbar";
 
@@ -84,23 +86,44 @@ export default function TourDetailOne(props) {
     return (
         <>
             <Navbar navclass="defaultscroll is-sticky" navlight={true} manuclass="!justify-end nav-light" />
-            <section className="relative table w-full items-center py-36 bg-[url('/images/bg/cta.jpg')] bg-top bg-no-repeat bg-cover">
-                <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
-                <div className="container relative">
-                    <div className="grid grid-cols-1 pb-8 text-center mt-10">
-                        <h3 className="text-3xl leading-normal tracking-wider font-semibold text-white">{data?.title}</h3>
-                    </div>
-                </div>
+           <section className="relative table w-full items-center py-36 overflow-hidden">
+    {/* BACKGROUND IMAGE (optimized) */}
+    <Image
+        src="/images/bg/broken-beach.jpg"
+        alt="West Nusa Penida Tour"
+        fill
+        priority
+        quality={75}
+        sizes="100vw"
+        className="object-cover object-top -z-10"
+    />
 
-                <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
-                    <ul className="tracking-[0.5px] mb-0 inline-block">
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><Link href="/">Tour</Link></li>
-                        <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i className="mdi mdi-chevron-right"></i></li>
-                        <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">west-nusa-penida-tour</li>
-                    </ul>
-                </div>
-            </section>
+    {/* OVERLAY */}
+    <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
 
+    {/* CONTENT */}
+    <div className="container relative">
+        <div className="grid grid-cols-1 pb-8 text-center mt-10">
+            <h3 className="text-3xl leading-normal tracking-wider font-semibold text-white">
+                {data?.title}
+            </h3>
+        </div>
+    </div>
+
+    <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
+        <ul className="tracking-[0.5px] mb-0 inline-block">
+            <li className="inline-block uppercase text-[13px] font-bold text-white/50 hover:text-white">
+                <Link href="/">Tour</Link>
+            </li>
+            <li className="inline-block text-base text-white/50 mx-0.5">
+                <i className="mdi mdi-chevron-right"></i>
+            </li>
+            <li className="inline-block uppercase text-[13px] font-bold text-white">
+                west-nusa-penida-tour
+            </li>
+        </ul>
+    </div>
+</section>
 
             <section className="relative md:py-24 py-16">
                 <div className="container relative">
