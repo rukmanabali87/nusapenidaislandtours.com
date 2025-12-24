@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 
 // import Tagline from "./components/tagline";
 // import Navbar from "./components/navbar";
-import VideoModalOne from "./components/video-modal-one";
+// import VideoModalOne from "./components/video-modal-one";
 // import Form from "./components/form";
 // import TopDestinationOne from "./components/top-destination-one";
 // import About from "./components/about";
