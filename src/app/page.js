@@ -1,5 +1,7 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
+import dynamic from "next/dynamic"; 
 
 import Tagline from "./components/tagline";
 import Navbar from "./components/navbar";
@@ -7,13 +9,18 @@ import VideoModalOne from "./components/video-modal-one";
 import Form from "./components/form";
 import TopDestinationOne from "./components/top-destination-one";
 import About from "./components/about";
-import Client from "./components/client";
-import Blogs from "./components/blogs";
+
 import Footer from "./components/footer";
 import Switcher from "./components/switcher";
 
+
+
 import { packages } from './data/data'
 import { FiMapPin } from 'react-icons/fi'
+
+// Dynamic import untuk komponen non-kritis
+const Blogs = dynamic(() => import('./components/blogs'), { ssr: false });
+const Client = dynamic(() => import('./components/client'), { ssr: false });
 
 export default function Home() {
     return (
@@ -224,8 +231,9 @@ export default function Home() {
                 </section>
 
 
-                <Client />
 
+                {/* Dynamic Components */}
+                <Client />
                 <Blogs />
             </section>
             <Footer />
