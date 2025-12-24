@@ -82,17 +82,16 @@ export default function TourImageOne(){
             <div className="md:col-span-8 col-span-7">
                 <div className="group relative overflow-hidden rounded shadow dark:shadow-gray-800">
                     {/* <img src='/images/listing/crystal-bay.jpg' className="w-full lg:h-60 md:h-44 h-48 object-cover" alt=""/> */}
-                    <Image
-  src="/images/listing/crystal-bay.jpg"
-  alt="Crystal Bay Nusa Penida"
-  width={1920}
-  height={1080}
-  quality={75}
-  sizes="(max-width: 768px) 100vw,
-         (max-width: 1024px) 50vw,
-         33vw"
-  className="w-full lg:h-60 md:h-44 h-48 object-cover"
-/>
+                     <Image
+    src="/images/listing/crystal-bay.jpg"
+    alt="Crystal Bay Nusa Penida"
+    fill
+    quality={65}
+    sizes="(max-width: 768px) 100vw,
+           (max-width: 1024px) 50vw,
+           360px"
+    className="object-cover"
+  />
                     <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                     <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
                         <Link href="#" onClick={() => handleCLick(3)} className="inline-flex justify-center items-center size-9 bg-primary text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
