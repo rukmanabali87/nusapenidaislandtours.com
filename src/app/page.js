@@ -12,7 +12,7 @@ import About from "./components/about";
 
 import Footer from "./components/footer";
 import Switcher from "./components/switcher";
-import Script from 'next/script';
+// import Script from 'next/script';
 
 
 
@@ -26,10 +26,10 @@ const Client = dynamic(() => import('./components/client'), { ssr: false });
 export default function Home() {
     return (
         <>
-        <Script
+        {/* <Script
         src="/_next/static/chunks/non-critical.css"
         strategy="lazyOnload"
-      />
+      /> */}
             <Tagline />
             <Navbar navclass="defaultscroll is-sticky tagline-height" navlight={true} manuclass="!justify-end nav-light" />
             {/* <section className="relative md:pt-72 md:pb-60 py-36 table w-full items-center bg-[url('/images/bg/1.jpg')] bg-top bg-no-repeat bg-cover">
