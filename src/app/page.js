@@ -41,15 +41,8 @@ export default function Home() {
   strategy="lazyOnload"
 />
 
-      <Script
-  src="/_next/static/chunks/b5afcf6e6b84afc2.css"
-  strategy="lazyOnload"
-/>
-     <Script
-  src="/_next/static/chunks/62ff8462e14d005c.css"
-  strategy="lazyOnload"
-/>
- 
+
+
 
             <Tagline />
             <Navbar navclass="defaultscroll is-sticky tagline-height" navlight={true} manuclass="!justify-end nav-light" />
