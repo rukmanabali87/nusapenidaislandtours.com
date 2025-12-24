@@ -2,36 +2,36 @@ import { FiShoppingCart, FiDribbble, FiLinkedin, FiFacebook, FiInstagram, FiTwit
 
 export const topDestination = [
     {
-        image: '/images/listing/1.jpg',
+        image: '/images/listing/angel-billabong.jpg',
         place: 'Angel Billabong'
     },
     {
-        image: '/images/listing/2.jpg',
+        image: '/images/listing/broken-beach.jpg',
         place: 'Broken Beach'
     },
     {
-        image: '/images/listing/3.jpg',
+        image: '/images/listing/diamond-beach.jpg',
         place: 'Diamond Beach'
     },
     {
-        image: '/images/listing/4.jpg',
+        image: '/images/listing/kelingking-beach.jpg',
         place: 'Klingking Beach'
     },
     {
-        image: '/images/listing/5.jpg',
+        image: '/images/listing/crystal-bay.jpg',
         place: 'Crystal Bay'
     },
     {
-        image: '/images/listing/6.jpg',
+        image: '/images/listing/Rumah-pohon.jpg',
         place: 'Rumah Pohon'
     },
     {
-        image: '/images/listing/7.jpg',
+        image: '/images/listing/manta-bay.jpg',
         place: 'Manta Bay'
     },
     {
-        image: '/images/listing/8.jpg',
-        place: 'nusa penida waterfall'
+        image: '/images/listing/nusa-penida-harbour.jpg',
+        place: 'Nusa Penida Harbour'
     },
 ]
 

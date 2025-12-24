@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import {FiCamera} from 'react-icons/fi'
 
@@ -30,7 +31,13 @@ export default function TourImageOne(){
         <div className="grid grid-cols-12 gap-4">
             <div className="md:col-span-8 col-span-7">
                 <div className="group relative overflow-hidden rounded shadow dark:shadow-gray-800">
-                    <img src='/images/listing/1.jpg' className="w-full lg:h-60 md:h-44 h-48 object-cover" alt=""/>
+                   <Image
+  src="/images/listing/kelingking-beach.jpg"
+  alt="Kelingking Beach Nusa Penida"
+  width={1920}
+  height={1080}
+  className="w-full lg:h-60 md:h-44 h-48 object-cover"
+/>
                     <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                     <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
                         <Link href="#" onClick={() => handleCLick(0)} className="inline-flex justify-center items-center size-9 bg-primary text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
@@ -40,7 +47,14 @@ export default function TourImageOne(){
 
             <div className="md:col-span-4 col-span-5">
                 <div className="group relative overflow-hidden rounded shadow dark:shadow-gray-800">
-                    <img src='/images/listing/2.jpg' className="w-full lg:h-60 md:h-44 h-48 object-cover" alt=""/>
+                    {/* <img src='/images/listing/broken-beach.jpg' className="w-full lg:h-60 md:h-44 h-48 object-cover" alt=""/> */}
+                    <Image
+  src="/images/listing/broken-beach.jpg"
+  alt="Broken Beach Nusa Penida"
+  width={1920}
+  height={1080}
+  className="w-full lg:h-60 md:h-44 h-48 object-cover"
+/>
                     <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                     <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
                         <Link href="#" onClick={() => handleCLick(1)} className="inline-flex justify-center items-center size-9 bg-primary text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
@@ -50,7 +64,14 @@ export default function TourImageOne(){
 
             <div className="md:col-span-4 col-span-5">
                 <div className="group relative overflow-hidden rounded shadow dark:shadow-gray-800">
-                    <img src='/images/listing/3.jpg' className="w-full lg:h-60 md:h-44 h-48 object-cover" alt=""/>
+                    {/* <img src='/images/listing/broken-beach.jpg' className="w-full lg:h-60 md:h-44 h-48 object-cover" alt=""/> */}
+                    <Image
+  src="/images/listing/angel-billabong.jpg"
+  alt="Angel Billabong Nusa Penida"
+  width={1920}
+  height={1080}
+  className="w-full lg:h-60 md:h-44 h-48 object-cover"
+/>
                     <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                     <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
                         <Link href="#" onClick={() => handleCLick(2)} className="inline-flex justify-center items-center size-9 bg-primary text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
@@ -60,7 +81,14 @@ export default function TourImageOne(){
 
             <div className="md:col-span-8 col-span-7">
                 <div className="group relative overflow-hidden rounded shadow dark:shadow-gray-800">
-                    <img src='/images/listing/4.jpg' className="w-full lg:h-60 md:h-44 h-48 object-cover" alt=""/>
+                    {/* <img src='/images/listing/crystal-bay.jpg' className="w-full lg:h-60 md:h-44 h-48 object-cover" alt=""/> */}
+                    <Image
+  src="/images/listing/crystal-bay.jpg"
+  alt="Crystal Bay Nusa Penida"
+  width={1920}
+  height={1080}
+  className="w-full lg:h-60 md:h-44 h-48 object-cover"
+/>
                     <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                     <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
                         <Link href="#" onClick={() => handleCLick(3)} className="inline-flex justify-center items-center size-9 bg-primary text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
