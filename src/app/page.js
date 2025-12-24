@@ -7,12 +7,12 @@ import Tagline from "./components/tagline";
 import Navbar from "./components/navbar";
 import VideoModalOne from "./components/video-modal-one";
 import Form from "./components/form";
-import TopDestinationOne from "./components/top-destination-one";
+// import TopDestinationOne from "./components/top-destination-one";
 import About from "./components/about";
 
 import Footer from "./components/footer";
 import Switcher from "./components/switcher";
-// import Script from 'next/script';
+
 
 
 
@@ -20,16 +20,14 @@ import { packages } from './data/data'
 import { FiMapPin } from 'react-icons/fi'
 
 // Dynamic import untuk komponen non-kritis
+const TopDestinationOne = dynamic(() => import('./components/top-destination-one'), { ssr: false });
 const Blogs = dynamic(() => import('./components/blogs'), { ssr: false });
 const Client = dynamic(() => import('./components/client'), { ssr: false });
 
 export default function Home() {
     return (
         <>
-        {/* <Script
-        src="/_next/static/chunks/non-critical.css"
-        strategy="lazyOnload"
-      /> */}
+       
             <Tagline />
             <Navbar navclass="defaultscroll is-sticky tagline-height" navlight={true} manuclass="!justify-end nav-light" />
             {/* <section className="relative md:pt-72 md:pb-60 py-36 table w-full items-center bg-[url('/images/bg/1.jpg')] bg-top bg-no-repeat bg-cover">
@@ -96,6 +94,7 @@ export default function Home() {
                 <Form />
             </div>
             <section className="relative md:py-24 py-16 overflow-hidden">
+               
                 <TopDestinationOne />
 
                 <div className="container relative md:mt-24 mt-16">
