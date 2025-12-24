@@ -40,6 +40,20 @@ export default function Home() {
   src="/_next/static/chunks/fbbbb93d0f932700.css"
   strategy="lazyOnload"
 />
+
+      <Script
+  src="/_next/static/chunks/b5afcf6e6b84afc2.css"
+  strategy="lazyOnload"
+/>
+     <Script
+  src="/_next/static/chunks/62ff8462e14d005c.css"
+  strategy="lazyOnload"
+/>
+     <Script
+  src="/_next/static/chunks/fbbbb93d0f932700.css"
+  strategy="lazyOnload"
+/>
+
             <Tagline />
             <Navbar navclass="defaultscroll is-sticky tagline-height" navlight={true} manuclass="!justify-end nav-light" />
             {/* <section className="relative md:pt-72 md:pb-60 py-36 table w-full items-center bg-[url('/images/bg/1.jpg')] bg-top bg-no-repeat bg-cover">
