@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic"; 
+import Script from 'next/script';
 
 // import Tagline from "./components/tagline";
 // import Navbar from "./components/navbar";
@@ -35,7 +36,10 @@ const Switcher = dynamic(() => import('./components/switcher'), { ssr: false });
 export default function Home() {
     return (
         <>
-       
+       <Script
+  src="/_next/static/chunks/fbbbb93d0f932700.css"
+  strategy="lazyOnload"
+/>
             <Tagline />
             <Navbar navclass="defaultscroll is-sticky tagline-height" navlight={true} manuclass="!justify-end nav-light" />
             {/* <section className="relative md:pt-72 md:pb-60 py-36 table w-full items-center bg-[url('/images/bg/1.jpg')] bg-top bg-no-repeat bg-cover">
