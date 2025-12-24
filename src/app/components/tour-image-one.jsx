@@ -87,6 +87,10 @@ export default function TourImageOne(){
   alt="Crystal Bay Nusa Penida"
   width={1920}
   height={1080}
+  quality={75}
+  sizes="(max-width: 768px) 100vw,
+         (max-width: 1024px) 50vw,
+         33vw"
   className="w-full lg:h-60 md:h-44 h-48 object-cover"
 />
                     <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
