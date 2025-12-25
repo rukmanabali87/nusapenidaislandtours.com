@@ -1,18 +1,21 @@
-'use client';
+
 import Image from "next/image";
 import Link from "next/link";
-import dynamic from "next/dynamic"; 
-import Script from 'next/script';
 
-// import Tagline from "./components/tagline";
-// import Navbar from "./components/navbar";
+
+
+ import Tagline from "./components/tagline";
+import Navbar from "./components/navbar";
 // import VideoModalOne from "./components/video-modal-one";
-// import Form from "./components/form";
-// import TopDestinationOne from "./components/top-destination-one";
-// import About from "./components/about";
+import Form from "./components/form";
+import TopDestinationOne from "./components/top-destination-one";
+import About from "./components/about";
 
-// import Footer from "./components/footer";
-// import Switcher from "./components/switcher";
+import Footer from "./components/footer";
+import Switcher from "./components/switcher";
+
+import Blogs from "./components/blogs";
+import Client from "./components/client";
 
 
 
@@ -20,29 +23,11 @@ import Script from 'next/script';
 import { packages } from './data/data'
 import { FiMapPin } from 'react-icons/fi'
 
-// Dynamic import untuk komponen non-kritis
-const Tagline = dynamic(() => import('./components/tagline'), { ssr: false });
-const Navbar = dynamic(() => import('./components/navbar'), { ssr: false });
-
-const Form = dynamic(() => import('./components/form'), { ssr: false });
-const TopDestinationOne = dynamic(() => import('./components/top-destination-one'), { ssr: false });
-const Blogs = dynamic(() => import('./components/blogs'), { ssr: false });
-const Client = dynamic(() => import('./components/client'), { ssr: false });
-const About = dynamic(() => import('./components/about'), { ssr: false });
-const Footer = dynamic(() => import('./components/footer'), { ssr: false });
-const Switcher = dynamic(() => import('./components/switcher'), { ssr: false });
 
 
 export default function Home() {
     return (
         <>
-       <Script
-  src="/_next/static/chunks/fbbbb93d0f932700.css"
-  strategy="lazyOnload"
-/>
-
-
-
 
             <Tagline />
             <Navbar navclass="defaultscroll is-sticky tagline-height" navlight={true} manuclass="!justify-end nav-light" />
