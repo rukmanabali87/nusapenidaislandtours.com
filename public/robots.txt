@@ -1,4 +1,9 @@
+# *
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://nusapenidaislandtours.com/sitemap.xml
+# Host
+Host: https://www.nusapenidaislandtours.com
+
+# Sitemaps
+Sitemap: https://www.nusapenidaislandtours.com/sitemap.xml
