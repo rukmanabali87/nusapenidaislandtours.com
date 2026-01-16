@@ -16,7 +16,33 @@ const dancing_script = Dancing_Script({
 export const metadata = {
   title: "Nusa Penida Island Tours – Best Private Tour & Snorkeling Packages",
   description: "Book the best Nusa Penida Island tours with private driver, snorkeling at Manta Point, fast boat tickets, and customizable Bali tour packages.",
+  keywords: [
+        "nusa penida island tours",
+        "nusa penida tour",
+        "private nusa penida tour",
+        "nusa penida day trip",
+  ],
+    alternates: {
+        canonical: "https://www.nusapenidaislandtours.com"
+    },
+  openGraph: {
+        title: "West Nusa Penida Tour – Private Day Trip",
+        description:
+            "Explore the western side of Nusa Penida including Kelingking Beach, Broken Beach, Angels Billabong, and Crystal Bay with a private driver.",
+        url: "https://www.nusapenidaislandtours.com",
+        siteName: "Nusa Penida Island Tours",
+        images: [
+            {
+                url: "https://www.nusapenidaislandtours.com/images/west-penida.jpg",
+                width: 1200,
+                height: 630
+            }
+        ],
+        type: "article"
+    }
 };
+
+
  
 
 export default function RootLayout({ children }) {
