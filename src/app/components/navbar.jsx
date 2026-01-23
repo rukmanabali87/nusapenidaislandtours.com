@@ -61,17 +61,17 @@ export default function classNavbar({navclass, navlight, manuclass}){
                 {navlight && (
                     <Link className="logo" href="/">
                         <span className="inline-block dark:hidden">
-                            <Image src='/images/logo-dark.png' width={133} height={28} className="h-7 l-dark" alt=""/>
-                            <Image src='/images/logo-ligh.png' width={133} height={28} className="h-7 l-light" alt=""/>
+                            <Image src='/images/logo-nusa-penida-dark.png' width={133} height={28} className="h-7 l-dark" alt=""/>
+                            <Image src='/images/logo-nusa-penida-light.png' width={133} height={28} className="h-7 l-light" alt=""/>
                         </span>
-                        <Image src='/images/logo-white.png' width={133} height={28} className="hidden dark:inline-block" alt=""/>
+                        <Image src='/images/logo-nusa-penida-light.png' width={133} height={28} className="hidden dark:inline-block" alt=""/>
                     </Link>
                 )}
                 {!navlight && (
                     <Link className="logo" href="/">
                         <div>
-                            <Image src='/images/logo-dark.png' width={133} height={28} className="h-7 inline-block dark:hidden" alt=""/>
-                            <Image src='/images/logo-white.png' width={133} height={28} className="h-7 hidden dark:inline-block" alt=""/>
+                            <Image src='/images/logo-nusa-penida-dark.png' width={133} height={28} className="h-7 inline-block dark:hidden" alt=""/>
+                            <Image src='/images/logo-nusa-penida-light.png' width={133} height={28} className="h-7 hidden dark:inline-block" alt=""/>
                         </div>
                     </Link>
                 )}
