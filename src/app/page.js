@@ -1,12 +1,8 @@
-
 import Image from "next/image";
 import Link from "next/link";
 
-
-
- import Tagline from "./components/tagline";
+import Tagline from "./components/tagline";
 import Navbar from "./components/navbar";
-// import VideoModalOne from "./components/video-modal-one";
 import Form from "./components/form";
 import TopDestinationOne from "./components/top-destination-one";
 import About from "./components/about";

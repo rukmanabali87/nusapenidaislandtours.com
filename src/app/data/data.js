@@ -1,4 +1,5 @@
-import { FiShoppingCart, FiDribbble, FiLinkedin, FiFacebook, FiInstagram, FiTwitter, FiMail, FiClock, FiActivity, FiUsers, FiGlobe, FiDollarSign, FiYoutube, FiHelpCircle, FiBookmark, FiSettings, FiGithub, FiGitlab } from "react-icons/fi"
+import { FiLinkedin, FiFacebook, FiInstagram, FiTwitter, FiMail, FiClock, FiActivity, FiUsers, FiGlobe, FiDollarSign, FiYoutube, FiHelpCircle, FiBookmark, FiSettings, FiGithub, FiGitlab } from "react-icons/fi"
+import { FaTiktok } from "react-icons/fa";
 
 export const topDestination = [
     {
@@ -199,32 +200,16 @@ export const blogData = [
 
 export const footerSocial = [
     {
-        icon: FiShoppingCart,
-        link: 'https://1.envato.market/shreethemes-portfolio'
-    },
-    {
-        icon: FiDribbble,
-        link: 'https://dribbble.com/shreethemes'
-    },
-    {
-        icon: FiLinkedin,
-        link: 'http://linkedin.com/company/shreethemes'
-    },
-    {
         icon: FiFacebook,
-        link: 'https://www.facebook.com/shreethemes'
+        link: 'https://www.facebook.com/nusapenidaislandtours'
     },
     {
         icon: FiInstagram,
-        link: 'https://www.instagram.com/shreethemes'
+        link: 'https://www.instagram.com/nusapenidaislandtours'
     },
     {
-        icon: FiTwitter,
-        link: 'https://twitter.com/shreethemes'
-    },
-    {
-        icon: FiMail,
-        link: 'mailto:support@shreethemes.in'
+        icon: FaTiktok,
+        link: 'https://www.tiktok.com/@nusapenidaislandtours'
     },
 ]
 
@@ -236,14 +221,6 @@ export const footerCompany = [
     {
         name: 'Term & Condition',
         link: '/services'
-    },
-    {
-        name: 'Partner',
-        link: '/team'
-    },
-    {
-        name: 'Become a Reseller',
-        link: '/team'
     },
     {
         name: 'Blog',

@@ -5,25 +5,21 @@ import {FiClock, FiMapPin, FiMail, FiFacebook, FiInstagram, FiTwitter, FiPhone} 
 export default function Tagline(){
     return(
         <>
-        <div className="tagline bg-slate-900">
+        <div className="tagline bg-[#157F84]">
             <div className="container relative">                
                 <div className="grid grid-cols-1">
                     <div className="flex items-center justify-between">
                         <ul className="list-none space-x-2">
                             <li className="inline-flex items-center">
-                                <FiClock className="text-primary size-4"></FiClock>
-                                <span className="ms-2 text-slate-300">Mon-Sat: 9am to 6pm</span>
+                                {/* <FiClock className="text-primary size-4"></FiClock>
+                                <span className="ms-2 text-slate-300">Mon-Sat: 9am to 6pm</span> */}
                             </li>
-                            {/* <li className="inline-flex items-center ms-2">
-                                <FiMapPin className="text-primary size-4"></FiMapPin>
-                                <span className="ms-2 text-slate-300">Houston, USA 485</span>
-                            </li> */}
                         </ul>
 
                         <ul className="list-none">
                             <li className="inline-flex items-center">
-                                <FiMail className="text-primary size-4"></FiMail>
-                                <a href="mailto:contact@nusapenidaislandtours.com.com" className="ms-2 text-slate-300 hover:text-slate-200">contact@nusapenidaislandtours.com</a>
+                                <FiMail className="text-slate-300 size-4"></FiMail>
+                                <a href="mailto:info@nusapenidaislandtours.com" className="ms-2 text-slate-300 hover:text-slate-200">info@nusapenidaislandtours.com</a>
                             </li>
                             <li className="inline-flex items-center ms-2">
                                 <ul className="list-none space-x-3">

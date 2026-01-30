@@ -4,11 +4,11 @@ import Image from "next/image";
 import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 import { footerCompany, footerSocial } from "../data/data";
-import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
+import { FiMapPin, FiPhone } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-slate-900 dark:bg-slate-800 relative text-gray-200 dark:text-gray-200">
+    <footer className="footer bg-[#157F84] dark:bg-[#157F84] relative text-gray-200 dark:text-gray-200">
       <div className="container relative">
         <div className="grid grid-cols-12">
           <div className="col-span-12">
@@ -17,7 +17,7 @@ export default function Footer() {
                 <div className="lg:col-span-3 md:col-span-12">
                   <Link href="#" className="text-[22px] focus:outline-none">
                     <Image
-                      src="/images/logo-ligh.png"
+                      src="/images/logo-nusa-penida-light.png"
                       width={133}
                       height={28}
                       alt=""
@@ -58,7 +58,7 @@ export default function Footer() {
                     </h5>
 
                     <div className="flex mt-4">
-                      <FiMapPin className="size-4 text-primary me-2 mt-1"></FiMapPin>
+                      <FiMapPin className="text-xl text-primary me-2 mt-1"></FiMapPin>
                       <div className="">
                         <h6 className="text-gray-300">
                           Office 1: Jl. Bias Muntig, Ped, <br /> Kec. Nusa
@@ -68,7 +68,7 @@ export default function Footer() {
                       </div>
                     </div>
                     <div className="flex mt-4">
-                      <FiMapPin className="size-4 text-primary me-2 mt-1"></FiMapPin>
+                      <FiMapPin className="text-xl text-primary me-2 mt-1"></FiMapPin>
                       <div className="">
                         <h6 className="text-gray-300">
                           Office 2: Jalan Pantai Matahari Terbit, <br /> Sanur
@@ -77,20 +77,6 @@ export default function Footer() {
                         </h6>
                       </div>
                     </div>
-
-                    {/* <div className="flex mt-4">
-                                            <FiMail className="size-4 text-primary me-2 mt-1"></FiMail>
-                                            <div className="">
-                                                <Link href="mailto:contact@example.com" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out">contact@example.com</Link>
-                                            </div>
-                                        </div>
-                        
-                                        <div className="flex mt-4">
-                                            <FiPhone className="size-4 text-primary me-2 mt-1"></FiPhone>
-                                            <div className="">
-                                                <Link href="tel:+152534-468-854" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out">+152 534-468-854</Link>
-                                            </div>
-                                        </div> */}
                   </div>
                 </div>
 
@@ -99,7 +85,7 @@ export default function Footer() {
                     <h5 className="tracking-[1px] text-gray-100 font-semibold">
                       Company
                     </h5>
-                    <ul className="list-none footer-list mt-6">
+                    <ul className="list-none footer-list mt-5">
                       {footerCompany.map((item, index) => {
                         return (
                           <li className="mt-[10px] first:mt-0" key={index}>
@@ -122,12 +108,12 @@ export default function Footer() {
                     Contact Us On
                   </h5>
                   <div className="flex items-center mt-3">
-                    <FaEnvelope className="text-xl text-red-500 me-2" />
-                    <span className="text-white">info@yourdomain.com</span>
+                    <FaEnvelope className="size-4 text-primary me-3" />
+                    <span className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out">info@nusapenidaislandtours.com</span>
                   </div>
 
-                  <div className="flex mt-4">
-                    <FiPhone className="size-4 text-primary me-2 mt-1"></FiPhone>
+                  <div className="flex items-center mt-4">
+                    <FiPhone className="size-4 text-primary me-3"></FiPhone>
                     <div className="">
                       <Link
                         href="tel:+152534-468-854"
@@ -137,8 +123,8 @@ export default function Footer() {
                       </Link>
                     </div>
                   </div>
-                  <div className="flex mt-4">
-                    <FaWhatsapp className="size-4 text-green-500 me-2" />
+                  <div className="flex items-center mt-4">
+                    <FaWhatsapp className="size-4 text-primary me-3" />
                     <div className="">
                       <Link
                         href="tel:+152534-468-854"
