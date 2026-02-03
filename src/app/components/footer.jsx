@@ -53,11 +53,8 @@ export default function Footer() {
                     <h5 className="tracking-[1px] text-gray-100 font-semibold">
                       Office
                     </h5>
-                    <h5 className="tracking-[1px] text-gray-100 mt-6">
-                      Nusa Penida Island Tours
-                    </h5>
 
-                    <div className="flex mt-4">
+                    <div className="flex mt-7">
                       <FiMapPin className="text-xl text-primary me-2 mt-1"></FiMapPin>
                       <div className="">
                         <h6 className="text-gray-300">
@@ -107,7 +104,7 @@ export default function Footer() {
                   <h5 className="tracking-[1px] text-gray-100 font-semibold">
                     Contact Us On
                   </h5>
-                  <div className="flex items-center mt-3">
+                  <div className="flex items-center mt-5">
                     <FaEnvelope className="size-4 text-primary me-3" />
                     <span className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out">info@nusapenidaislandtours.com</span>
                   </div>

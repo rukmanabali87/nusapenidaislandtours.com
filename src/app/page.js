@@ -27,38 +27,19 @@ export default function Home() {
 
             <Tagline />
             <Navbar navclass="defaultscroll is-sticky tagline-height" navlight={true} manuclass="!justify-end nav-light" />
-            {/* <section className="relative md:pt-72 md:pb-60 py-36 table w-full items-center bg-[url('/images/bg/1.jpg')] bg-top bg-no-repeat bg-cover">
-                <div className="absolute inset-0 bg-slate-900/40"></div>
-                <div className="container relative">
-                    <div className="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
-                        <div className="lg:col-span-8 md:col-span-7 md:order-1 order-2">
-                            <h5 className="text-3xl !font-dancing text-white">Beauty of Discovers nuSA</h5>
-                            <h4 className="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-6xl mb-6 mt-5">Lets Leave The Road, <br /> And Take The Island</h4>
-                            <p className="text-white/70 text-xl max-w-xl">Planning for a trip? We will organize your trip with the best places and within best budget!</p>
-                        </div>
-
-                        <VideoModalOne />
-                    </div>
-                </div>
-            </section> */}
+            
             <section className="relative w-full h-screen overflow-hidden">
 
-                {/* Fallback Image */}
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: "url('/images/hero.jpg')" }}
-                />
-
-                {/* Video */}
                 <video
                     autoPlay
                     muted
                     loop
                     playsInline
-                    preload="none"
+                    preload="metadata"
+                    poster="/images/hero.jpg"
                     className="absolute inset-0 w-full h-full object-cover"
-                >
-                    <source src="/video/nuspen.mp4" type="video/mp4" />
+                    >
+                    <source src="/videos/landing-page.mp4" type="video/mp4" />
                 </video>
 
                 {/* Overlay */}
