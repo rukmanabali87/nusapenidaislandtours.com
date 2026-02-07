@@ -6,6 +6,7 @@ import Navbar from "./components/navbar";
 import Form from "./components/form";
 import TopDestinationOne from "./components/top-destination-one";
 import About from "./components/about";
+import WhyChooseUs from "./components/why-choose-us";
 
 import Footer from "./components/footer";
 import Switcher from "./components/switcher";
@@ -72,7 +73,6 @@ export default function Home() {
                 <Form />
             </div>
             <section className="relative md:py-24 py-16 overflow-hidden">
-               
                 <TopDestinationOne />
 
                 <div className="container relative md:mt-24 mt-16">
@@ -88,21 +88,20 @@ export default function Home() {
                                 <div className="group rounded-md shadow dark:shadow-gray-700" key={index}>
                                     <div className="relative overflow-hidden rounded-t-md shadow dark:shadow-gray-700 mx-3 mt-3">
                                         <Image src={item.image} width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="scale-125 group-hover:scale-100 duration-500" alt="" />
-                                        {item.tagText && (
+                                        {/* {item.tagText && (
                                             <div className="absolute top-0 start-0 p-4">
                                                 <span className="bg-primary text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">{item.tagText}</span>
                                             </div>
-                                        )}
+                                        )} */}
 
-                                        <div className="absolute top-0 end-0 p-4">
+                                        {/* <div className="absolute top-0 end-0 p-4">
                                             <Link href="#" className="size-8 inline-flex justify-center items-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-full text-slate-100 dark:text-slate-700 focus:text-primary dark:focus:text-primary hover:text-primary dark:hover:text-primary"><i className="mdi mdi-heart text-[20px] align-middle"></i></Link>
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     <div className="p-4">
                                         <p className="flex items-center text-slate-400 font-medium mb-2"><FiMapPin className="text-primary size-4 me-1"></FiMapPin> {item.place}</p>
                                         <Link href={`/tour-detail-one/${item.id}`} className="text-lg font-medium hover:text-primary duration-500 ease-in-out">{item.title}</Link>
-                                        {/* <Link href={`/tour-detail-two`} className="text-lg font-medium hover:text-primary duration-500 ease-in-out">{item.title}</Link> */}
 
                                         <div className="flex items-center mt-2">
                                             <span className="text-slate-400">Rating:</span>
@@ -133,88 +132,9 @@ export default function Home() {
                 </div>
 
                 <About />
-                <section className="py-20 bg-white">
-                    <div className="container mx-auto px-4">
 
-                        {/* Title */}
-                        <div className="text-center mb-12">
-                            <h2 className="text-4xl font-bold text-slate-900">
-                                Why Travelers Trust Nusa Penida Island Tours
-                            </h2>
-                        </div>
-
-                        {/* Grid */}
-                        <div className="grid md:grid-cols-4 grid-cols-1 gap-8 text-center">
-
-                            {/* Card 1 */}
-                            <div className="p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-                                <img
-                                    src="/images/whyus/pricing.png"
-                                    alt="Transparent Pricing"
-                                    className="h-16 mx-auto mb-4"
-                                />
-                                <h4 className="text-xl font-semibold mb-3">
-                                    Transparent Pricing
-                                </h4>
-                                <p className="text-slate-600 leading-relaxed">
-                                    Enjoy clear, upfront pricing with no hidden costs — what you see is exactly what you pay.
-                                </p>
-                            </div>
-
-                            {/* Card 2 */}
-                            <div className="p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-                                <img
-                                    src="/images/whyus/team.png"
-                                    alt="Experienced Local Team"
-                                    className="h-16 mx-auto mb-4"
-                                />
-                                <h4 className="text-xl font-semibold mb-3">
-                                    Experienced Local Team
-                                </h4>
-                                <p className="text-slate-600 leading-relaxed">
-                                    Our knowledgeable local team brings years of hands-on experience to ensure a smooth and authentic Bali adventure.
-                                </p>
-                            </div>
-
-                            {/* Card 3 */}
-                            <div className="p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-                                <img
-                                    src="/images/whyus/custom.png"
-                                    alt="Customizable Tours"
-                                    className="h-16 mx-auto mb-4"
-                                />
-                                <h4 className="text-xl font-semibold mb-3">
-                                    Fully Customizable Tours
-                                </h4>
-                                <p className="text-slate-600 leading-relaxed">
-                                    Every trip is designed around your needs — flexible itineraries, personal preferences, and special requests are always welcome.
-                                </p>
-                            </div>
-
-                            {/* Card 4 */}
-                            <div className="p-6 rounded-2xl shadow-md hover:shadow-xl transition">
-                                <img
-                                    src="/images/whyus/support.png"
-                                    alt="24/7 Support"
-                                    className="h-16 mx-auto mb-4"
-                                />
-                                <h4 className="text-xl font-semibold mb-3">
-                                    24/7 Customer Support
-                                </h4>
-                                <p className="text-slate-600 leading-relaxed">
-                                    Our friendly support team is available around the clock to assist you before, during, and after your trip.
-                                </p>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </section>
-
-
-
-                {/* Dynamic Components */}
+                <WhyChooseUs/>
+                
                 <Client />
                 <Blogs />
             </section>

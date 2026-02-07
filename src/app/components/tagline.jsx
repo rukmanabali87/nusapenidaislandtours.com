@@ -19,7 +19,7 @@ export default function Tagline(){
                         <ul className="list-none">
                             <li className="inline-flex items-center">
                                 <FiMail className="text-slate-300 size-4"></FiMail>
-                                <a href="mailto:info@nusapenidaislandtours.com" className="ms-2 text-slate-300 hover:text-slate-200">info@nusapenidaislandtours.com</a>
+                                <a href="mailto:hello.nusapenidaislanndtours@gmail.com" className="ms-2 text-slate-300 hover:text-slate-200">hello.nusapenidaislanndtours@gmail.com</a>
                             </li>
                             <li className="inline-flex items-center ms-2">
                                 <ul className="list-none space-x-3">

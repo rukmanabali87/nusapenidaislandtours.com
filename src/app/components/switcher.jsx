@@ -2,7 +2,7 @@
 import React,{useEffect, useState} from "react";
 import Link from "next/link";
 
-import {FiSun, FiMoon} from 'react-icons/fi'
+import { FiSun, FiMoon, FiArrowUp } from 'react-icons/fi'
 export default function Switcher(){
     let [visible, setVisible] = useState(false) 
 
@@ -68,7 +68,20 @@ export default function Switcher(){
             </Link>
         </div> */}
 
-        <Link href="#" id="back-to-top" className="back-to-top fixed text-lg rounded-md z-10 bottom-5 end-5 size-8 text-center bg-primary/10 hover:bg-primary text-primary hover:text-white justify-center items-center" style={{display: visible ? 'inline-flex' : 'none'}}><i className="mdi mdi-arrow-up"></i></Link>
+        {/* <Link href="#" id="back-to-top" className="back-to-top fixed text-lg rounded-md z-10 bottom-5 end-5 size-8 text-center bg-primary/10 hover:bg-primary text-primary hover:text-white justify-center items-center" style={{display: visible ? 'inline-flex' : 'none'}}><i className="mdi mdi-arrow-up"></i></Link> */}
+        
+        <button
+            id="back-to-top"
+            onClick={() =>
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                })
+            }
+            className="back-to-top fixed text-lg rounded-md z-10 bottom-5 end-5 size-8 text-center bg-primary/40 hover:bg-primary text-white justify-center items-center"
+            style={{ display: visible ? "inline-flex" : "none" }}>
+            <FiArrowUp size={18} />
+        </button>
         </>
     )
 }

@@ -104,10 +104,15 @@ export default function Footer() {
                   <h5 className="tracking-[1px] text-gray-100 font-semibold">
                     Contact Us On
                   </h5>
-                  <div className="flex items-center mt-5">
-                    <FaEnvelope className="size-4 text-primary me-3" />
-                    <span className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out">info@nusapenidaislandtours.com</span>
-                  </div>
+                  <a
+                    href="mailto:hello.nusapenidaislanndtours@gmail.com"
+                    className="flex items-center gap-3 mt-6 text-slate-300 hover:text-slate-400 duration-500 ease-in-out leading-none"
+                  >
+                    <FaEnvelope className="size-4 text-primary flex-shrink-0" />
+                    <span className="leading-none">
+                      hello.nusapenidaislanndtours@gmail.com
+                    </span>
+                  </a>
 
                   <div className="flex items-center mt-4">
                     <FiPhone className="size-4 text-primary me-3"></FiPhone>
