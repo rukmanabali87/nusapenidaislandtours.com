@@ -25,9 +25,9 @@ export default function classNavbar({navclass, navlight, manuclass}){
 
         const handleOutsideClick = (event) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-              setIsOpen(false);
+                setIsOpen(false);
             }
-          };
+        };
 
         const userOutsideClick = (e) =>{
             if(userRef.current && !userRef.current.contains(e.target)){
@@ -48,12 +48,12 @@ export default function classNavbar({navclass, navlight, manuclass}){
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('click', handleOutsideClick);
             window.removeEventListener('click', userOutsideClick);
-          };
+        };
     },[])
 
     const toggleMenu = () =>{
         setToggle(!isToggle)
-      }
+    }
 
     return(
         <nav id="topnav" className={`${navclass} ${scrolling ? 'nav-sticky' : ''}`}>
@@ -86,7 +86,7 @@ export default function classNavbar({navclass, navlight, manuclass}){
                         <li className={`has-submenu parent-parent-menu-item ${['/grid','/grid-left-sidebar','/grid-right-sidebar','/list','/list-left-sidebar','/list-right-sidebar','/tour-detail-one','/tour-detail-two','/listing-item','/grid-item','/list-item','/detail-item'].includes(manu) ? 'active' : '' }`}><Link href="" onClick={()=>setSubManu(subManu === '/listing-item' ? '' : '/listing-item' )}> Tour </Link><span className="menu-arrow"></span>
                             <ul className={`submenu ${['/grid','/grid-left-sidebar','/grid-right-sidebar','/list','/list-left-sidebar','/list-right-sidebar','/tour-detail-one','/tour-detail-two','/listing-item','/grid-item','/list-item','/detail-item'].includes(subManu) ? 'open' : '' }`}>
                                 <li className={`${manu === '/tour/west-nusa-penida-tour' ? 'active' : '' }`}><Link href="/tour/west-nusa-penida-tour" className="sub-menu-item">West Nusa Penida Tour</Link></li>
-                                <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">East Nusa Penida Tour</Link></li>
+                                <li className={`${manu === '/tours/east-nusa-penida-tour' ? 'active' : '' }`}><Link href="/tours/east-nusa-penida-tour" className="sub-menu-item">East Nusa Penida Tour</Link></li>
                                 <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">West Nusa Penida + Snorkeling Tour</Link></li>
                                 <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">West + East Tour Combination</Link></li>
                                 <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">Snorkeling at Manta Point</Link></li>

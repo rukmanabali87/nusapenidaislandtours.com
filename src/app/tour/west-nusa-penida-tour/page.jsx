@@ -180,30 +180,30 @@ export default function TourDetailOne(props) {
                                 <h3 className="text-2xl font-semibold mb-4">Tour Highlights</h3>
 
                                <ul className="space-y-6 ">
-  <li className="flex items-start gap-4 p-4 bg-white rounded-3xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-l-4 border-green-400">
-    <span className="text-3xl">🚗</span>
-    <div>
-      <h4 className="font-extrabold text-lg text-gray-800">Private Car & Driver</h4>
-      <p className="text-gray-500">Explore comfortably with an expert local island driver.</p>
-    </div>
-  </li>
+                                    <li className="flex items-start gap-4 p-4 bg-white rounded-3xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-l-4 border-green-400">
+                                        <span className="text-3xl">🚗</span>
+                                        <div>
+                                        <h4 className="font-extrabold text-lg text-gray-800">Private Car & Driver</h4>
+                                        <p className="text-gray-500">Explore comfortably with an expert local island driver.</p>
+                                        </div>
+                                    </li>
 
-  <li className="flex items-start gap-4 p-4 bg-white rounded-3xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-l-4 border-blue-400">
-    <span className="text-3xl">⛴️</span>
-    <div>
-      <h4 className="font-extrabold text-lg text-gray-800">Fast Boat Tickets Included</h4>
-      <p className="text-gray-500">Round-trip fast boat from Sanur to Nusa Penida.</p>
-    </div>
-  </li>
+                                    <li className="flex items-start gap-4 p-4 bg-white rounded-3xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-l-4 border-blue-400">
+                                        <span className="text-3xl">⛴️</span>
+                                        <div>
+                                        <h4 className="font-extrabold text-lg text-gray-800">Fast Boat Tickets Included</h4>
+                                        <p className="text-gray-500">Round-trip fast boat from Sanur to Nusa Penida.</p>
+                                        </div>
+                                    </li>
 
-  <li className="flex items-start gap-4 p-4 bg-white rounded-3xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-l-4 border-yellow-400">
-    <span className="text-3xl">🏝️</span>
-    <div>
-      <h4 className="font-extrabold text-lg text-gray-800">Top Destinations</h4>
-      <p className="text-gray-500">Visit Kelingking, Broken Beach, Angel Billabong, and Crystal Bay.</p>
-    </div>
-  </li>
-</ul>
+                                    <li className="flex items-start gap-4 p-4 bg-white rounded-3xl shadow-md hover:shadow-xl transform hover:scale-105 transition-all duration-300 border-l-4 border-yellow-400">
+                                        <span className="text-3xl">🏝️</span>
+                                        <div>
+                                        <h4 className="font-extrabold text-lg text-gray-800">Top Destinations</h4>
+                                        <p className="text-gray-500">Visit Kelingking, Broken Beach, Angel Billabong, and Crystal Bay.</p>
+                                        </div>
+                                    </li>
+                                </ul>
 
 
                             </div>

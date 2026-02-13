@@ -105,12 +105,12 @@ export default function Footer() {
                     Contact Us On
                   </h5>
                   <a
-                    href="mailto:hello.nusapenidaislanndtours@gmail.com"
+                    href="mailto:hello.nusapenidaislandtours@gmail.com"
                     className="flex items-center gap-3 mt-6 text-slate-300 hover:text-slate-400 duration-500 ease-in-out leading-none"
                   >
                     <FaEnvelope className="size-4 text-primary flex-shrink-0" />
                     <span className="leading-none">
-                      hello.nusapenidaislanndtours@gmail.com
+                      hello.nusapenidaislandtours@gmail.com
                     </span>
                   </a>
 

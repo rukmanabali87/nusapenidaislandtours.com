@@ -11,15 +11,13 @@ export default function Tagline(){
                     <div className="flex items-center justify-between">
                         <ul className="list-none space-x-2">
                             <li className="inline-flex items-center">
-                                {/* <FiClock className="text-primary size-4"></FiClock>
-                                <span className="ms-2 text-slate-300">Mon-Sat: 9am to 6pm</span> */}
                             </li>
                         </ul>
 
                         <ul className="list-none">
                             <li className="inline-flex items-center">
                                 <FiMail className="text-slate-300 size-4"></FiMail>
-                                <a href="mailto:hello.nusapenidaislanndtours@gmail.com" className="ms-2 text-slate-300 hover:text-slate-200">hello.nusapenidaislanndtours@gmail.com</a>
+                                <a href="mailto:hello.nusapenidaislandtours@gmail.com" className="ms-2 text-slate-300 hover:text-slate-200">hello.nusapenidaislandtours@gmail.com</a>
                             </li>
                             <li className="inline-flex items-center ms-2">
                                 <ul className="list-none space-x-3">
