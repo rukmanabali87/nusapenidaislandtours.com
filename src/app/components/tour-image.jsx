@@ -40,7 +40,7 @@ export default function TourImage({ images = [] }){
                     </div>
                     <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                     <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                        <Link href="#" onClick={() => handleCLick(0)} className="inline-flex justify-center items-center size-9 bg-[#397A3D] text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
+                        <Link href="#" onClick={() => handleCLick(0)} className="inline-flex justify-center items-center size-9 bg-primary text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
                     </div>
                 </div>
             </div>
@@ -58,7 +58,7 @@ export default function TourImage({ images = [] }){
                     </div>
                     <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                     <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                        <Link href="#" onClick={() => handleCLick(1)} className="inline-flex justify-center items-center size-9 bg-[#397A3D] text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
+                        <Link href="#" onClick={() => handleCLick(1)} className="inline-flex justify-center items-center size-9 bg-primary text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@ export default function TourImage({ images = [] }){
                     </div>
                     <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                     <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                        <Link href="#" onClick={() => handleCLick(2)} className="inline-flex justify-center items-center size-9 bg-[#397A3D] text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
+                        <Link href="#" onClick={() => handleCLick(2)} className="inline-flex justify-center items-center size-9 bg-primary text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@ export default function TourImage({ images = [] }){
                     </div>
                     <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                     <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center opacity-0 group-hover:opacity-100 duration-500">
-                        <Link href="#" onClick={() => handleCLick(3)} className="inline-flex justify-center items-center size-9 bg-[#397A3D] text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
+                        <Link href="#" onClick={() => handleCLick(3)} className="inline-flex justify-center items-center size-9 bg-primary text-white rounded-full lightbox"><FiCamera className="size-4 align-middle"></FiCamera></Link>
                     </div>
                 </div>
             </div>

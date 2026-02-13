@@ -39,6 +39,165 @@ export const topDestination = [
 
 export const toursData = [
     {
+        slug: "west-nusa-penida-tour",
+
+        productData: {
+        title: "West Nusa Penida Tour",
+        place: "Nusa Penida, Bali",
+        desc1:
+            "Experience the beauty of West Nusa Penida on a private and comfortable full-day tour. This trip takes you to the island’s most iconic landmarks, including Kelingking Beach, Broken Beach, Angel’s Billabong, and Crystal Bay. Each location offers breathtaking cliff views, turquoise waters, and perfect photo opportunities for couples, families, and adventure travelers.",
+        desc2:
+            "During the tour, you will travel in a private air-conditioned car with a friendly English-speaking local driver who will guide you to each destination. Fast boat tickets from Sanur to Nusa Penida are included, ensuring a smooth and hassle-free journey. Whether you're looking for relaxation or adventure, this tour provides the perfect blend of comfort, flexibility, and unforgettable scenery.",
+        desc3:
+            "This tour is ideal for travelers who want a safe, customizable, and private experience on one of Bali’s most beautiful islands. With transparent pricing and no hidden fees, you can enjoy the day stress-free while exploring the best highlights of West Nusa Penida.",
+        },
+
+        images: [
+            { src: "/images/tours/west-nusa-penida-tour/1.jpg", alt: "Kelingking Beach" },
+            { src: "/images/tours/west-nusa-penida-tour/2.jpg", alt: "Broken Beach" },
+            { src: "/images/tours/west-nusa-penida-tour/3.jpg", alt: "Angel's Billabong" },
+            { src: "/images/tours/west-nusa-penida-tour/4.jpg", alt: "Crystal Bay" },
+        ],
+
+        tourDetailAbout: [
+            { icon: "clock", name: "Duration", title: "12 Hours (Approx.)" },
+            { icon: "activity", name: "Type", title: "Tour" },
+            { icon: "users", name: "Group Size", title: "15 Peoples" },
+            { icon: "globe", name: "Languages", title: "English" },
+            { icon: "dollar", name: "Start Price", title: "From IDR 1.281.000" },
+        ],
+
+        highlightsData: [
+            {
+                icon: "car",
+                title: "Private Car & Driver",
+                desc: "Explore comfortably with an expert local island driver.",
+            },
+            {
+                icon: "fastBoat",
+                title: "Fast Boat Tickets Included",
+                desc: "Round-trip fast boat from Sanur to Nusa Penida.",
+            },
+            {
+                icon: "island",
+                title: "Top Destinations",
+                desc: "Visit Kelingking, Broken Beach, Angel Billabong, and Crystal Bay.",
+            },
+        ],
+
+        itineraryData: [
+            {
+                time: "08:00 AM",
+                title: "Fast Boat Check-In",
+                desc: "Check-in at Sanur Harbour and prepare for departure to Nusa Penida."
+            },
+            {
+                time: "08:30 AM",
+                title: "Depart to Nusa Penida",
+                desc: "Fast boat transfer from Sanur to Nusa Penida."
+            },
+            {
+                time: "09:30 AM",
+                title: "Arrival & Start Tour",
+                desc: "Meet your driver and begin the West Nusa Penida tour."
+            },
+            {
+                time: "10:30 AM",
+                title: "Kelingking Beach",
+                desc: "Enjoy the iconic cliff views and take photos."
+            },
+            {
+                time: "11:45 AM",
+                title: "Broken Beach",
+                desc: "Visit the famous natural rock arch formation."
+            },
+            {
+                time: "12:30 PM",
+                title: "Angel’s Billabong",
+                desc: "Explore the natural infinity pool by the sea."
+            },
+            {
+                time: "01:30 PM",
+                title: "Lunch Break",
+                desc: "Lunch at a local restaurant (personal expenses)."
+            },
+            {
+                time: "02:45 PM",
+                title: "Crystal Bay",
+                desc: "Relax at the beautiful white sand beach."
+            },
+            {
+                time: "04:00 PM",
+                title: "Return to Harbour",
+                desc: "Transfer back to Nusa Penida Harbour."
+            },
+            {
+                time: "04:30 PM",
+                title: "Fast Boat to Sanur",
+                desc: "Return by fast boat to Sanur."
+            },
+            {
+                time: "05:30 PM",
+                title: "Arrival in Sanur",
+                desc: "Arrive at Sanur Harbour."
+            },
+            {
+                time: "06:00 PM",
+                title: "Hotel Drop-Off",
+                desc: "Transfer back to your hotel."
+            },
+        ],
+
+        inclusionsData: {
+            included: [
+                "Private Air-Conditioned Car & Driver",
+                "English-Speaking Local Guide",
+                "Hotel pick-up & drop-off in Bali",
+                "Return fast boat ticket",
+                "All entrance tickets",
+                "Parking Fees",
+            ],
+            excluded: [
+                "Meals",
+                "Personal Expenses",
+                "Travel Insurance",
+            ],
+        },
+
+        faqData: [
+            {
+                id: 1,
+                title: "Is this a full-day tour?",
+                desc: "Yes, this is a full-day tour starting in the morning and returning to Bali in the late afternoon."
+            },
+            {
+                id: 2,
+                title: "Is this a private tour?",
+                desc: "Yes, this is a private tour with a dedicated driver and private air-conditioned vehicle in Nusa Penida."
+            },
+            {
+                id: 3,
+                title: "Are fast boat tickets included?",
+                desc: "Yes, return fast boat tickets from Sanur to Nusa Penida are included in the package."
+            },
+            {
+                id: 4,
+                title: "Is lunch included in the tour price?",
+                desc: "Lunch is not included and will be at your own expense at a local restaurant."
+            },
+            {
+                id: 5,
+                title: "What places will we visit?",
+                desc: "You will visit Kelingking Beach, Broken Beach, Angel’s Billabong, and Crystal Bay."
+            },
+            {
+                id: 6,
+                title: "Is the tour suitable for families?",
+                desc: "Yes, this tour is suitable for couples, families, and travelers who want a comfortable private experience."
+            },
+        ],
+    },
+    {
         slug: "east-nusa-penida-tour",
 
         productData: {

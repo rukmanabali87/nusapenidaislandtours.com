@@ -83,15 +83,17 @@ export default function classNavbar({navclass, navlight, manuclass}){
                             <Link href="/" onClick={()=>{ setManu('/'); setSubManu('/'); setToggle(false); }} className="sub-menu-item">Home</Link>
                         </li>
 
-                        <li className={`has-submenu parent-parent-menu-item ${['/grid','/grid-left-sidebar','/grid-right-sidebar','/list','/list-left-sidebar','/list-right-sidebar','/tour-detail-one','/tour-detail-two','/listing-item','/grid-item','/list-item','/detail-item'].includes(manu) ? 'active' : '' }`}><Link href="" onClick={()=>setSubManu(subManu === '/listing-item' ? '' : '/listing-item' )}> Tour </Link><span className="menu-arrow"></span>
-                            <ul className={`submenu ${['/grid','/grid-left-sidebar','/grid-right-sidebar','/list','/list-left-sidebar','/list-right-sidebar','/tour-detail-one','/tour-detail-two','/listing-item','/grid-item','/list-item','/detail-item'].includes(subManu) ? 'open' : '' }`}>
-                                <li className={`${manu === '/tour/west-nusa-penida-tour' ? 'active' : '' }`}><Link href="/tour/west-nusa-penida-tour" className="sub-menu-item">West Nusa Penida Tour</Link></li>
-                                <li className={`${manu === '/tours/east-nusa-penida-tour' ? 'active' : '' }`}><Link href="/tours/east-nusa-penida-tour" className="sub-menu-item">East Nusa Penida Tour</Link></li>
-                                <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">West Nusa Penida + Snorkeling Tour</Link></li>
-                                <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">West + East Tour Combination</Link></li>
-                                <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">Snorkeling at Manta Point</Link></li>
-                                <li className={`${manu === '/blogs' ? 'active' : '' }`}><Link href="/blogs" className="sub-menu-item">Private Nusa Lembongan Tour</Link></li>
-                            </ul>
+                        <li className={`has-submenu parent-menu-item ${['/tours/west-nusa-penida-tour', '/tours/east-nusa-penida-tour', '/tours/west-nusa-penida-snorkeling-tour', '/tours/west-east-tour-combination', '/tours/snorkeling-at-manta-point', '/tours/private-nusa-lembongan-tour'].includes(manu) ? 'active' : ''}`}>
+                            <Link href="" onClick={()=>setSubManu(subManu === '/tours-item' ? '' : '/tours-item')}>Tours</Link><span className="menu-arrow"></span>
+                            <ul className={`submenu ${subManu === '/tours-item' ? 'open' : ''}`}>
+                                <li className={`${manu === '/tours/west-nusa-penida-tour' ? 'active' : ''}`}><Link href="/tours/west-nusa-penida-tour" className="sub-menu-item">West Nusa Penida Tour</Link></li>
+                                <li className={`${manu === '/tours/east-nusa-penida-tour' ? 'active' : ''}`}><Link href="/tours/east-nusa-penida-tour" className="sub-menu-item">East Nusa Penida Tour</Link></li>
+                                <li className={`${manu === '/tours/west-nusa-penida-snorkeling-tour' ? 'active' : ''}`}><Link href="/tours/west-nusa-penida-snorkeling-tour" className="sub-menu-item">West Nusa Penida + Snorkeling Tour</Link></li>
+                                <li className={`${manu === '/tours/west-east-tour-combination' ? 'active' : ''}`}><Link href="/tours/west-east-tour-combination" className="sub-menu-item">West + East Tour Combination</Link></li>
+                                <li className={`${manu === '/tours/snorkeling-at-manta-point' ? 'active' : ''}`}><Link href="/tours/snorkeling-at-manta-point" className="sub-menu-item">Snorkeling at Manta Point</Link></li>
+                                <li className={`${manu === '/tours/private-nusa-lembongan-tour' ? 'active' : ''}`}><Link href="/tours/private-nusa-lembongan-tour" className="sub-menu-item">Private Nusa Lembongan Tour</Link></li>
+                                
+                            </ul> 
                         </li>
                 
                         <li className={`parent-menu-item ${manu === '/aboutus' || manu.startsWith('/aboutus') ? 'active' : ''}`}>
