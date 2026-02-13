@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { toursData } from "@/app/data/data";
 import TourDetailPage from "@/app/components/tour-detail-page";
+import Error from "@/app/404/page";
 
 export function generateStaticParams() {
     return toursData.map((tour) => ({
@@ -15,7 +16,7 @@ export function generateStaticParams() {
         (item) => item.slug === slug
     );
 
-    if (!tour) return notFound();
+    if (!tour) return <Error/>;
 
     return <TourDetailPage data={tour} />;
 }
