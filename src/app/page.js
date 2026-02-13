@@ -11,13 +11,14 @@ import WhyChooseUs from "./components/why-choose-us";
 import Footer from "./components/footer";
 import Switcher from "./components/switcher";
 
+import { toursData } from "./data/data";
+
 import Blogs from "./components/blogs";
 import Client from "./components/client";
 
 
 
-
-import { packages } from './data/data'
+import { MdArrowForward, MdStar } from "react-icons/md";
 import { FiMapPin } from 'react-icons/fi'
 
 
@@ -77,57 +78,82 @@ export default function Home() {
 
                 <div className="container relative md:mt-24 mt-16">
                     <div className="grid grid-cols-1 pb-8 text-center">
-                        <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Tours Packages</h3>
+                        <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Tour Packages</h3>
 
-                        <p className="text-slate-400 max-w-xl mx-auto">Planning for a trip? We will organize your trip with the best places and within best budget!</p>
+                        <p className="text-slate-400 max-w-xl mx-auto">Discover our top tour packages — curated itineraries, great value, and unforgettable Bali experiences ready to book.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
-                        {packages.slice(0, 6).map((item, index) => {
+                        {toursData.slice(0, 6).map((item, index) => {
                             return (
-                                <div className="group rounded-md shadow dark:shadow-gray-700" key={index}>
-                                    <div className="relative overflow-hidden rounded-t-md shadow dark:shadow-gray-700 mx-3 mt-3">
-                                        <Image src={item.image} width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} className="scale-125 group-hover:scale-100 duration-500" alt="" />
-                                        {/* {item.tagText && (
-                                            <div className="absolute top-0 start-0 p-4">
-                                                <span className="bg-primary text-white text-[12px] px-2.5 py-1 font-medium rounded-md h-5">{item.tagText}</span>
-                                            </div>
-                                        )} */}
+                            <div className="group rounded-md shadow dark:shadow-gray-700" key={index}>
+                                <div className="relative overflow-hidden rounded-t-md shadow dark:shadow-gray-700 mx-3 mt-3">
+                                    <Link href={`/tours/${item.slug}`} className="block overflow-hidden">
+                                        {item.images?.[0]?.src && (
+                                            <Image
+                                                src={item.images[0].src}
+                                                alt={item.images[0].alt || item.productData.title}
+                                                width={0}
+                                                height={0}
+                                                sizes="100vw"
+                                                style={{ width: "100%", height: "auto" }}
+                                                className="scale-125 group-hover:scale-100 duration-500"
+                                            />
+                                        )}
+                                    </Link>
+                                </div>
 
-                                        {/* <div className="absolute top-0 end-0 p-4">
-                                            <Link href="#" className="size-8 inline-flex justify-center items-center bg-white dark:bg-slate-900 shadow dark:shadow-gray-800 rounded-full text-slate-100 dark:text-slate-700 focus:text-primary dark:focus:text-primary hover:text-primary dark:hover:text-primary"><i className="mdi mdi-heart text-[20px] align-middle"></i></Link>
-                                        </div> */}
+                                <div className="p-4">
+                                    <p className="flex items-center text-slate-400 font-medium mb-2">
+                                        <FiMapPin className="text-primary size-4 me-1" />
+                                        {item.productData.place}
+                                    </p>
+
+                                    
+                                    <Link href={`/tours/${item.slug}`} className="text-lg font-medium hover:text-primary duration-500 ease-in-out">
+                                        {item.productData.title}
+                                    </Link>
+
+                                    
+                                    <div className="flex items-center mt-2">
+                                        <span className="text-slate-400">Rating:</span>
+                                        <ul className="flex items-center text-amber-400 list-none ms-2">
+                                            {[...Array(5)].map((_, i) => (
+                                                <li key={i} className="inline-flex items-center">
+                                                    <MdStar className="text-lg" />
+                                                </li>
+                                            ))}
+                                            <li className="text-black dark:text-white text-sm ms-1">
+                                                5.0
+                                            </li>
+                                        </ul>
                                     </div>
 
-                                    <div className="p-4">
-                                        <p className="flex items-center text-slate-400 font-medium mb-2"><FiMapPin className="text-primary size-4 me-1"></FiMapPin> {item.place}</p>
-                                        <Link href={`/tour-detail-one/${item.id}`} className="text-lg font-medium hover:text-primary duration-500 ease-in-out">{item.title}</Link>
+                                    <div className="mt-4 pt-4 flex justify-between items-center border-t border-slate-100 dark:border-gray-800">
+                                        <h5 className="text-lg font-medium text-primary">
+                                            {
+                                                item.tourDetailAbout.find(
+                                                    (detail) => detail.name === "Start Price"
+                                                )?.title
+                                            }
+                                        </h5>
 
-                                        <div className="flex items-center mt-2">
-                                            <span className="text-slate-400">Rating:</span>
-                                            <ul className="text-lg font-medium text-amber-400 list-none ms-2 space-x-1">
-                                                <li className="inline"><i className="mdi mdi-star align-middle"></i></li>
-                                                <li className="inline"><i className="mdi mdi-star align-middle"></i></li>
-                                                <li className="inline"><i className="mdi mdi-star align-middle"></i></li>
-                                                <li className="inline"><i className="mdi mdi-star align-middle"></i></li>
-                                                <li className="inline"><i className="mdi mdi-star align-middle"></i></li>
-                                                <li className="inline text-black dark:text-white text-sm">5.0(30)</li>
-                                            </ul>
-                                        </div>
-
-                                        <div className="mt-4 pt-4 flex justify-between items-center border-t border-slate-100 dark:border-gray-800">
-                                            <h5 className="text-lg font-medium text-primary">{item.amount}</h5>
-
-                                            <Link href="" className="text-slate-400 hover:text-primary">Explore Now <i className="mdi mdi-arrow-right"></i></Link>
-                                        </div>
+                                        <Link href={`/tours/${item.slug}`} className="inline-flex items-center gap-1 text-slate-400 hover:text-primary">
+                                            Explore Now
+                                            <MdArrowForward size={18} />
+                                        </Link>
                                     </div>
                                 </div>
-                            )
+                            </div>
+                            );
                         })}
                     </div>
 
                     <div className="mt-6 text-center">
-                        <Link href="/grid-right-sidebar" className="text-slate-400 hover:text-primary inline-block">See More Tours <i className="mdi mdi-arrow-right align-middle"></i></Link>
+                        <Link href="/" className="inline-flex items-center gap-1 text-slate-400 hover:text-primary">
+                            See More Tours
+                            <MdArrowForward size={18} />
+                        </Link>
                     </div>
                 </div>
 

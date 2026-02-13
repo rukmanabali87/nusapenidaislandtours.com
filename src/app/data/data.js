@@ -678,6 +678,141 @@ export const toursData = [
             },
         ],
     },
+    {
+        id: 5,
+        slug: "snorkeling-at-manta-point",
+
+        productData: {
+        title: "Snorkeling at Manta Point",
+        place: "Nusa Penida, Bali",
+        desc1:
+            "Experience an unforgettable marine adventure with our Snorkeling at Manta Point tour in Nusa Penida. This exciting trip takes you to one of Bali’s most famous snorkeling spots, where you’ll have the chance to swim alongside majestic manta rays in their natural habitat. With crystal-clear waters and vibrant marine life, Manta Point offers a truly breathtaking underwater experience.",
+        desc2:
+            "The journey begins with a boat ride along the stunning coastline of Nusa Penida, leading you to the iconic Manta Point. Here, you can snorkel in open waters guided by experienced local professionals who prioritize safety and comfort. Besides manta rays, you may also encounter colorful coral reefs and tropical fish, making the experience even more memorable.",
+        desc3:
+            "Perfect for ocean lovers and adventure seekers, this tour is suitable for beginners and experienced snorkelers alike. Snorkeling at Manta Point in Nusa Penida promises a once-in-a-lifetime opportunity to connect with nature and explore the beauty beneath the surface.",
+        },
+
+        images: [
+            { src: "/images/tours/snorkeling-at-manta-point/1.jpg", alt: "Manta Point Snorkeling" },
+            { src: "/images/tours/snorkeling-at-manta-point/2.jpg", alt: "Manta Point View" },
+            { src: "/images/tours/snorkeling-at-manta-point/3.jpg", alt: "Manta Point Underwater" },
+            { src: "/images/tours/snorkeling-at-manta-point/4.jpg", alt: "Manta Point" },
+        ],
+
+        tourDetailAbout: [
+            { icon: "clock", name: "Duration", title: "12 Hours (Approx.)" },
+            { icon: "activity", name: "Type", title: "Tour" },
+            { icon: "users", name: "Group Size", title: "15 Peoples" },
+            { icon: "globe", name: "Languages", title: "English" },
+            { icon: "dollar", name: "Start Price", title: "From IDR 1.281.000" },
+        ],
+
+        highlightsData: [
+            {
+                icon: "anchor",
+                title: "Swim with Manta Rays",
+                desc: "Snorkel alongside majestic manta rays in their natural habitat."
+            },
+            {
+                icon: "waves",
+                title: "Clear Blue Waters",
+                desc: "Explore the beautiful waters of Nusa Penida."
+            },
+            {
+                icon: "shield",
+                title: "Safe & Guided Tour",
+                desc: "Enjoy a safe trip with experienced local guides."
+            },
+        ],
+
+        itineraryData: [
+            {
+                time: "08:00 AM",
+                title: "Hotel Pick-Up",
+                desc: "Pick-up from your hotel in Nusa Penida and transfer to the harbor."
+            },
+            {
+                time: "08:30 AM",
+                title: "Arrival & Safety Briefing",
+                desc: "Meet the snorkeling team and receive a short safety briefing."
+            },
+            {
+                time: "09:00 AM",
+                title: "Boat Departure to Manta Point",
+                desc: "Depart by boat to the famous Manta Point snorkeling area."
+            },
+            {
+                time: "09:45 AM",
+                title: "Snorkeling at Manta Point",
+                desc: "Swim and snorkel with majestic manta rays in their natural habitat."
+            },
+            {
+                time: "11:30 AM",
+                title: "Additional Snorkeling Spots",
+                desc: "Explore nearby coral reefs and tropical fish at selected spots."
+            },
+            {
+                time: "01:30 PM",
+                title: "Return to Harbor",
+                desc: "Boat ride back to the harbor."
+            },
+            {
+                time: "02:00 PM",
+                title: "Drop-Off & Tour Ends",
+                desc: "Transfer back to your hotel and end of the tour."
+            },
+        ],
+
+        inclusionsData: {
+            included: [
+                "Private Air-Conditioned Car & Driver",
+                "English-Speaking Local Guide",
+                "Hotel pick-up & drop-off in Bali",
+                "Return fast boat ticket",
+                "All entrance tickets",
+                "Parking Fees",
+            ],
+            excluded: [
+                "Meals",
+                "Personal Expenses",
+                "Travel Insurance",
+            ],
+        },
+
+        faqData: [
+            {
+                id: 1,
+                title: "Is this tour suitable for beginners?",
+                desc: "Yes, this tour is suitable for beginners. Life jackets are provided and guides will assist you during snorkeling."
+            },
+            {
+                id: 2,
+                title: "Are manta ray sightings guaranteed?",
+                desc: "Manta rays are often seen at Manta Point, but sightings depend on ocean and weather conditions."
+            },
+            {
+                id: 3,
+                title: "Is snorkeling equipment included?",
+                desc: "Yes, mask, snorkel, and life jacket are included in the package."
+            },
+            {
+                id: 4,
+                title: "How long is the tour?",
+                desc: "The tour lasts approximately 6 hours, starting at 08:00 AM."
+            },
+            {
+                id: 5,
+                title: "What should I bring?",
+                desc: "Bring swimwear, towel, sunscreen, and personal cash for additional expenses."
+            },
+            {
+                id: 6,
+                title: "Is hotel pick-up included?",
+                desc: "Yes, hotel pick-up and drop-off in Nusa Penida are included."
+            },
+        ],
+    },
 ];
 
 export const packages = [

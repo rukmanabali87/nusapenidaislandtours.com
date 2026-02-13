@@ -1,11 +1,12 @@
 'use client';
 import React from "react";
 
-import { FaMapPin, FaCameraRetro, FaCar, FaSwimmer, FaMapMarkedAlt  } from "react-icons/fa";
+import { FaMapPin, FaCameraRetro, FaCar, FaSwimmer, FaMapMarkedAlt, FaAnchor, FaUserShield    } from "react-icons/fa";
 import { FaPersonWalkingLuggage } from "react-icons/fa6";
 import { MdDirectionsBoat } from "react-icons/md";
 import { PiIslandFill } from "react-icons/pi";
 import { GiSeaCliff } from "react-icons/gi";
+import { LuWaves } from "react-icons/lu";
 
 
 
@@ -21,6 +22,9 @@ export default function TourHighlights({ items = [] }){
         snorkel: FaSwimmer,
         map: FaMapMarkedAlt,
         cliff: GiSeaCliff,
+        anchor: FaAnchor,
+        waves: LuWaves,
+        shield: FaUserShield,
     };
 
     return (
