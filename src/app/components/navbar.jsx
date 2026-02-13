@@ -76,6 +76,18 @@ export default function classNavbar({navclass, navlight, manuclass}){
                     </Link>
                 )}
 
+                <div className="menu-extras">
+                    <div className="menu-item">
+                        <Link href="#" className={`navbar-toggle ${isToggle ? 'open' : ''}`} id="isToggle" onClick={() =>toggleMenu()}>
+                            <div className="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+
                 <div id="navigation" style={{display: isToggle === true ? 'block' : 'none'}}>
                     <ul className={`navigation-menu ${manuclass}`}>
 
