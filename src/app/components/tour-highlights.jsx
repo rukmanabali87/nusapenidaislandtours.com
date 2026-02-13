@@ -1,7 +1,7 @@
 'use client';
 import React from "react";
 
-import { FaMapPin, FaCameraRetro, FaCar } from "react-icons/fa";
+import { FaMapPin, FaCameraRetro, FaCar, FaSwimmer } from "react-icons/fa";
 import { FaPersonWalkingLuggage } from "react-icons/fa6";
 import { MdDirectionsBoat } from "react-icons/md";
 import { PiIslandFill } from "react-icons/pi";
@@ -17,6 +17,7 @@ export default function TourHighlights({ items = [] }){
         car: FaCar,
         fastBoat: MdDirectionsBoat,
         island: PiIslandFill,
+        snorkel: FaSwimmer,
     };
 
     return (

@@ -15,11 +15,11 @@ export default function TourInclusions({ items }) {
 
                     <ul className="space-y-2 text-slate-400">
                         {items.map((item, i) => (
-                            <li key={i} className="flex items-start gap-2">
-                                <span className={`w-5 flex justify-center mt-[2px] flex-shrink-0 ${type === "included" ? "text-primary" : "text-red-500"}`}>
-                                    {type === "included" ? <FaCheck size={15} /> : <FaTimes size={18} />}
-                                </span>
-                                <span className="leading-relaxed">{item}</span>
+                            <li key={i} className="flex items-start gap-3">
+                            <span className={`flex-shrink-0 mt-[3px] ${type === "included" ? "text-primary" : "text-red-500"}`}>
+                                {type === "included" ? (<FaCheck size={16} />) : (<FaTimes size={16} />)}
+                            </span>
+                            <span className="leading-normal">{item}</span>
                             </li>
                         ))}
                     </ul>

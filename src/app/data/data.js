@@ -39,6 +39,7 @@ export const topDestination = [
 
 export const toursData = [
     {
+        id: 1,
         slug: "west-nusa-penida-tour",
 
         productData: {
@@ -198,13 +199,14 @@ export const toursData = [
         ],
     },
     {
+        id: 2,
         slug: "east-nusa-penida-tour",
 
         productData: {
         title: "East Nusa Penida Tour",
         place: "Nusa Penida, Bali",
         desc1:
-            "The East of Nusa Penida Day Tour is a perfect choice for travelers who want to explore the most scenic and unspoiled eastern side of Nusa Penida Island. This full-day tour starts with a convenient hotel pick-up in Bali, followed by a fast boat ride from Sanur to Nusa Penida. Accompanied by a local guide, you will discover dramatic coastal cliffs, turquoise waters, and breathtaking viewpoints that make East Nusa Penida one of Bali’s most photogenic destinations..",
+            "The East of Nusa Penida Day Tour is a perfect choice for travelers who want to explore the most scenic and unspoiled eastern side of Nusa Penida Island. This full-day tour starts with a convenient hotel pick-up in Bali, followed by a fast boat ride from Sanur to Nusa Penida. Accompanied by a local guide, you will discover dramatic coastal cliffs, turquoise waters, and breathtaking viewpoints that make East Nusa Penida one of Bali’s most photogenic destinations.",
         desc2:
             "During this East Nusa Penida tour, you will visit iconic spots such as Atuh Beach and Diamond Beach, famous for their white sand, crystal-clear ocean, and stunning cliffside panoramas. These locations are ideal for sightseeing, short beach walks, and capturing memorable photos. A lunch break at a local restaurant is available (optional), allowing you to relax and enjoy the island atmosphere before continuing your journey.",
         desc3:
@@ -355,6 +357,166 @@ export const toursData = [
                 id:6,
                 title:'Is hotel pickup and drop-off available in all areas of Bali?',
                 desc:'Hotel pickup and drop-off service is available from selected areas, including Ubud, Denpasar, Canggu, Seminyak, Legian, Kuta, Tuban, Jimbaran, Sanur, Tanjung Benoa, and Nusa Dua. For locations outside these pickup zones, additional charges may apply—please contact us for more details or custom pickup arrangements.'
+            },
+        ],
+    },
+    {
+        id: 3,
+        slug: "west-nusa-penida-snorkeling-tour",
+
+        productData: {
+        title: "West Nusa Penida + Snorkeling Tour",
+        place: "Nusa Penida, Bali",
+        desc1:
+            "The West Nusa Penida Snorkeling Tour is a complete full-day experience designed for travelers who want to explore the most iconic attractions in West Nusa Penida while enjoying an exciting snorkeling adventure. This popular West Nusa Penida Tour begins with convenient hotel pick-up in Bali, followed by a fast boat transfer from Sanur to Nusa Penida Island. With a private air-conditioned vehicle and a friendly local driver, you will comfortably explore dramatic coastal cliffs, crystal-clear waters, and some of the most photographed viewpoints in Bali.",
+        desc2:
+            "During the West Nusa Penida Snorkeling Tour, you will visit top highlights including Kelingking Beach, Broken Beach, and Angel’s Billabong. These famous landmarks are known for their breathtaking ocean panoramas and unique rock formations, making them must-visit destinations on any West Nusa Penida Tour itinerary. A lunch stop at a local restaurant is available (personal expense), giving you time to relax before continuing your island adventure.",
+        desc3:
+            "The highlight of the West Nusa Penida Snorkeling Tour is an unforgettable Nusa Penida snorkeling experience at Crystal Bay, one of the island’s best snorkeling spots. Swim in clear blue waters, explore vibrant coral reefs, and discover tropical marine life in a safe and guided environment. After a full day of sightseeing and snorkeling in West Nusa Penida, you will return to Bali by fast boat and be transferred back to your hotel, completing a memorable West Nusa Penida Snorkeling Tour experience.",
+        },
+
+        images: [
+            { src: "/images/tours/west-nusa-penida-snorkeling-tour/1.jpg", alt: "Crystal Bay Snorkeling" },
+            { src: "/images/tours/west-nusa-penida-snorkeling-tour/2.jpg", alt: "Kelingking Beach" },
+            { src: "/images/tours/west-nusa-penida-snorkeling-tour/3.jpg", alt: "Broken Beach" },
+            { src: "/images/tours/west-nusa-penida-snorkeling-tour/4.jpg", alt: "Angel's Billabong" },
+        ],
+
+        tourDetailAbout: [
+            { icon: "clock", name: "Duration", title: "12 Hours (Approx.)" },
+            { icon: "activity", name: "Type", title: "Tour" },
+            { icon: "users", name: "Group Size", title: "15 Peoples" },
+            { icon: "globe", name: "Languages", title: "English" },
+            { icon: "dollar", name: "Start Price", title: "From IDR 1.281.000" },
+        ],
+
+        highlightsData: [
+            {
+                icon: "snorkel",
+                title: "Crystal Bay Snorkeling",
+                desc: "Swim in clear waters and explore vibrant coral reefs."
+            },
+            {
+                icon: "mapPin",
+                title: "Iconic West Nusa Penida",
+                desc: "Visit Kelingking Beach, Broken Beach & Angel’s Billabong."
+            },
+            {
+                icon: "camera",
+                title: "Spectacular Cliff Views",
+                desc: "Enjoy dramatic ocean panoramas and photo-worthy landscapes."
+            },
+        ],
+
+        itineraryData: [
+            {
+                time: "08:00 AM",
+                title: "Fast Boat Check-In",
+                desc: "Check-in at Sanur Harbour and prepare for departure to Nusa Penida."
+            },
+            {
+                time: "08:30 AM",
+                title: "Fast Boat Departure",
+                desc: "Depart from Sanur to Nusa Penida by fast boat."
+            },
+            {
+                time: "09:30 AM",
+                title: "Arrival at Nusa Penida",
+                desc: "Arrive at Nusa Penida Harbour and meet your local driver."
+            },
+            {
+                time: "10:00 AM",
+                title: "Visit Kelingking Beach",
+                desc: "Enjoy the iconic T-Rex cliff view and take stunning photos."
+            },
+            {
+                time: "11:30 AM",
+                title: "Broken Beach",
+                desc: "Explore the natural rock arch and beautiful coastal scenery."
+            },
+            {
+                time: "12:15 PM",
+                title: "Angel’s Billabong",
+                desc: "Visit the natural infinity pool with breathtaking ocean views."
+            },
+            {
+                time: "01:30 PM",
+                title: "Lunch Break",
+                desc: "Lunch at a local restaurant (personal expense)."
+            },
+            {
+                time: "02:30 PM",
+                title: "Transfer to Snorkeling Point",
+                desc: "Head to the harbor and prepare for snorkeling activity."
+            },
+            {
+                time: "03:00 PM",
+                title: "Snorkeling at Crystal Bay",
+                desc: "Enjoy snorkeling in crystal-clear waters and discover vibrant coral reefs and tropical fish."
+            },
+            {
+                time: "04:30 PM",
+                title: "Return to Harbour",
+                desc: "Finish snorkeling and return to Nusa Penida Harbour."
+            },
+            {
+                time: "05:00 PM",
+                title: "Fast Boat to Sanur",
+                desc: "Return to Bali by fast boat."
+            },
+            {
+                time: "06:00 PM",
+                title: "Arrival & Hotel Drop-Off",
+                desc: "Arrive at Sanur Harbour and transfer back to your hotel."
+            },
+        ],
+
+        inclusionsData: {
+            included: [
+                "Private Air-Conditioned Car & Driver",
+                "English-Speaking Local Guide",
+                "Hotel pick-up & drop-off in Bali",
+                "Return fast boat ticket",
+                "All entrance tickets",
+                "Parking Fees",
+            ],
+            excluded: [
+                "Meals",
+                "Personal Expenses",
+                "Travel Insurance",
+            ],
+        },
+
+        faqData: [
+            {
+                id: 1,
+                title: "Is this a full-day tour?",
+                desc: "Yes, this is a full-day tour starting in the morning and returning to Bali in the late afternoon or evening."
+            },
+            {
+                id: 2,
+                title: "Which snorkeling spots will we visit?",
+                desc: "You will snorkel at popular spots such as Crystal Bay and other selected snorkeling points depending on sea conditions."
+            },
+            {
+                id: 3,
+                title: "Is snorkeling equipment included?",
+                desc: "Yes, snorkeling equipment including mask, snorkel, and life jacket is included in the package."
+            },
+            {
+                id: 4,
+                title: "Is lunch included in the package?",
+                desc: "Lunch is optional and at personal expense unless otherwise stated in your package details."
+            },
+            {
+                id: 5,
+                title: "Is this tour suitable for beginners?",
+                desc: "Yes, this tour is suitable for beginners. Life jackets are provided and our guide will assist you during the snorkeling activity."
+            },
+            {
+                id: 6,
+                title: "What should I bring for the tour?",
+                desc: "We recommend bringing sunscreen, swimwear, a towel, a change of clothes, sunglasses, and personal cash for additional expenses."
             },
         ],
     },
