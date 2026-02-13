@@ -26,12 +26,9 @@ import { FiMapPin } from 'react-icons/fi'
 export default function Home() {
     return (
         <>
-
             <Tagline />
             <Navbar navclass="defaultscroll is-sticky tagline-height" navlight={true} manuclass="!justify-end nav-light" />
-            
             <section className="relative w-full h-screen overflow-hidden">
-
                 <video
                     autoPlay
                     muted
