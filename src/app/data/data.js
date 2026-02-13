@@ -520,6 +520,164 @@ export const toursData = [
             },
         ],
     },
+    {
+        id: 4,
+        slug: "west-east-tour-combination",
+
+        productData: {
+        title: "West + East Tour Combination",
+        place: "Nusa Penida, Bali",
+        desc1:
+            "Explore the very best of Nusa Penida in one unforgettable day with our West + East Tour Combination. This full-day adventure takes you to the island’s most iconic landmarks, combining dramatic coastal cliffs, crystal-clear waters, and breathtaking panoramic viewpoints. Perfect for travelers who want to maximize their time, this tour showcases both sides of the island in a seamless and well-organized journey.",
+        desc2:
+            "Begin your adventure in the west with a visit to the world-famous Kelingking Beach, known for its T-Rex shaped cliff and spectacular ocean views. Continue to the natural arch of Broken Beach and the stunning infinity pool formation at Angel's Billabong. On the eastern side, discover the white sands and turquoise waters of Diamond Beach and Atuh Beach, followed by panoramic views from the famous Rumah Pohon Molenteng.",
+        desc3:
+            "End the day relaxing at Crystal Bay, a serene beach perfect for enjoying the sunset and soaking in the island atmosphere. This tour focuses on sightseeing and photography, offering the perfect balance of adventure and relaxation without snorkeling activities. The West + East Tour Combination is ideal for those seeking the ultimate Nusa Penida experience in just one day.",
+        },
+
+        images: [
+            { src: "/images/tours/west-east-tour-combination/1-new.jpg", alt: "Broken Beach" },
+            { src: "/images/tours/west-east-tour-combination/2-new.jpg", alt: "Kelingking Beach" },
+            { src: "/images/tours/west-east-tour-combination/3.jpg", alt: "Angel's Billabong" },
+            { src: "/images/tours/west-east-tour-combination/4.jpg", alt: "Rumah Pohon Molenteng" },
+            { src: "/images/tours/west-east-tour-combination/5.jpg", alt: "Atuh Beach" },
+            { src: "/images/tours/west-east-tour-combination/6.jpg", alt: "Diamond Beach" },
+            { src: "/images/tours/west-east-tour-combination/7.jpg", alt: "Crystal Bay" },
+        ],
+
+        tourDetailAbout: [
+            { icon: "clock", name: "Duration", title: "12 Hours (Approx.)" },
+            { icon: "activity", name: "Type", title: "Tour" },
+            { icon: "users", name: "Group Size", title: "15 Peoples" },
+            { icon: "globe", name: "Languages", title: "English" },
+            { icon: "dollar", name: "Start Price", title: "From IDR 1.281.000" },
+        ],
+
+        highlightsData: [
+            {
+                icon: "map",
+                title: "West & East in One Day",
+                desc: "Explore the island’s top highlights from both sides in a single trip."
+            },
+            {
+                icon: "camera",
+                title: "Iconic Photo Spots",
+                desc: "Visit Kelingking Beach, Diamond Beach, and Rumah Pohon Molenteng."
+            },
+            {
+                icon: "cliff",
+                title: "Cliffs, Beaches & Crystal Bay",
+                desc: "Discover dramatic cliffs, natural rock formations, and relax by the sea."
+            },
+        ],
+
+        itineraryData: [
+            {
+                time: "08:00 AM",
+                title: "Arrival at Nusa Penida & Meet Driver",
+                desc: "Arrive at Nusa Penida harbor and meet your local driver to begin the tour."
+            },
+            {
+                time: "09:00 AM",
+                title: "Kelingking Beach",
+                desc: "Enjoy the iconic T-Rex cliff view and take stunning photos from the viewpoint."
+            },
+            {
+                time: "10:30 AM",
+                title: "Broken Beach",
+                desc: "Visit the famous natural rock arch overlooking the ocean."
+            },
+            {
+                time: "11:15 AM",
+                title: "Angel Billabong",
+                desc: "Explore the beautiful natural infinity pool formation by the sea."
+            },
+            {
+                time: "12:30 PM",
+                title: "Lunch Time",
+                desc: "Enjoy lunch at a local restaurant (personal expense)."
+            },
+            {
+                time: "02:00 PM",
+                title: "Diamond Beach",
+                desc: "Discover the white sandy beach and dramatic limestone cliffs."
+            },
+            {
+                time: "03:00 PM",
+                title: "Atuh Beach",
+                desc: "Relax and take photos at one of the most scenic beaches in East Nusa Penida."
+            },
+            {
+                time: "04:00 PM",
+                title: "Rumah Pohon Molenteng",
+                desc: "Capture panoramic views from the famous tree house viewpoint."
+            },
+            {
+                time: "05:30 PM",
+                title: "Crystal Bay",
+                desc: "Unwind by the beach and enjoy the peaceful coastal atmosphere."
+            },
+            {
+                time: "07:30 PM",
+                title: "Return to Harbor",
+                desc: "Transfer back to the harbor for your boat departure."
+            },
+            {
+                time: "08:00 PM",
+                title: "Tour Ends",
+                desc: "Departure from Nusa Penida and end of the tour."
+            },
+        ],
+
+        inclusionsData: {
+            included: [
+                "Private Air-Conditioned Car & Driver",
+                "English-Speaking Local Guide",
+                "Hotel pick-up & drop-off in Bali",
+                "Return fast boat ticket",
+                "All entrance tickets",
+                "Parking Fees",
+            ],
+            excluded: [
+                "Meals",
+                "Personal Expenses",
+                "Travel Insurance",
+            ],
+        },
+
+        faqData: [
+            {
+                id: 1,
+                title: "Is this a full-day tour?",
+                desc: "Yes, this is a full-day tour lasting approximately 12 hours from morning until evening."
+            },
+            {
+                id: 2,
+                title: "Does this tour include both West and East Nusa Penida?",
+                desc: "Yes, the tour covers the top highlights on both the west and east sides of Nusa Penida."
+            },
+            {
+                id: 3,
+                title: "Is snorkeling included in this package?",
+                desc: "Snorkeling is not included in the standard package, but it can be arranged upon request and discussed further before booking."
+            },
+            {
+                id: 4,
+                title: "Is lunch included?",
+                desc: "Lunch is usually at personal expense unless stated otherwise in your booking details."
+            },
+            {
+                id: 5,
+                title: "Is this tour suitable for children or older travelers?",
+                desc: "Yes, but please note that some locations require walking and stairs, especially at Diamond Beach and Rumah Pohon."
+            },
+            {
+                id: 6,
+                title: "What should I bring?",
+                desc: "We recommend comfortable shoes, sunscreen, sunglasses, a hat, and personal cash for meals or entrance fees."
+            },
+        ],
+    },
 ];
 
 export const packages = [

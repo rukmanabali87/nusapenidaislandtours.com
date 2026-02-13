@@ -23,7 +23,7 @@ export default function Error(){
                                 <Link href="/" className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary text-white rounded-md">Back to Home</Link>
                             </div>
                         </div>
-                        <div className="text-center">
+                        <div className="md:mt-5 mt-8 text-center">
                             <p className="mb-0 text-slate-400">© {new Date().getFullYear()} PT. Rejeki Utama Kencana </p>
                         </div>
                     </div>
