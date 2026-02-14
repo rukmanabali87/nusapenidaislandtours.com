@@ -813,6 +813,145 @@ export const toursData = [
             },
         ],
     },
+    {
+        id: 6,
+        slug: "private-nusa-lembongan-tour",
+
+        productData: {
+        title: "Private Nusa Lembongan Tour",
+        place: "Nusa Lembongan, Bali",
+        desc1:
+            "Private Nusa Lembongan Tour is the perfect choice for travelers seeking an exclusive and flexible island experience from Bali. This full-day private tour includes hotel pick-up, fast boat transfers, and a personalized itinerary designed to let you explore Nusa Lembongan comfortably and at your own pace. Enjoy the beauty of white sand beaches, clear turquoise waters, and breathtaking coastal cliffs without sharing the experience with other groups.",
+        desc2:
+            "During your Private Nusa Lembongan Tour, you will visit top attractions such as Devil’s Tear, Dream Beach, and the iconic Yellow Bridge. With a private driver and guide, you can take your time capturing photos, enjoying scenic views, and discovering the peaceful charm of the island. This tour is ideal for couples, families, or small groups who value privacy and convenience.",
+        desc3:
+            "For a more adventurous experience, you can add snorkeling to your Private Nusa Lembongan Tour at popular spots like Manta Bay and Crystal Bay. Swim in crystal-clear waters and explore vibrant marine life before continuing your island exploration. Combining relaxation, adventure, and comfort, this tour offers one of the best ways to discover Nusa Lembongan in a private setting.",
+        },
+
+        images: [
+            { src: "/images/tours/private-nusa-lembongan-tour/1.jpg", alt: "Yellow Bridge" },
+            { src: "/images/tours/private-nusa-lembongan-tour/2.jpg", alt: "Devil's Tear" },
+            { src: "/images/tours/private-nusa-lembongan-tour/3.jpg", alt: "Dream Beach" },
+            { src: "/images/tours/west-nusa-penida-snorkeling-tour/1.jpg", alt: "Crystal Bay" },
+            { src: "/images/tours/snorkeling-at-manta-point/1.jpg", alt: "Manta Bay" },
+        ],
+
+        tourDetailAbout: [
+            { icon: "clock", name: "Duration", title: "8 Hours (Approx.)" },
+            { icon: "activity", name: "Type", title: "Tour" },
+            { icon: "users", name: "Group Size", title: "15 Peoples" },
+            { icon: "globe", name: "Languages", title: "English" },
+            { icon: "dollar", name: "Start Price", title: "From IDR 1.281.000" },
+        ],
+
+        highlightsData: [
+            {
+                icon: "car",
+                title: "Private Hotel Pick-Up & Fast Boat",
+                desc: "Private transfer and fast boat to Nusa Lembongan."
+            },
+            {
+                icon: "map",
+                title: "Explore Iconic Island Spots",
+                desc: "Visit Devil’s Tear, Dream Beach, and Yellow Bridge."
+            },
+            {
+                icon: "snorkel",
+                title: "Optional Snorkeling",
+                desc: "Snorkel at Manta Bay or Crystal Bay."
+            },
+        ],
+
+        itineraryData: [
+            {
+                time: "08:00 AM",
+                title: "Hotel Pick-Up",
+                desc: "Private pick-up from your hotel in Bali and transfer to Sanur harbor."
+            },
+            {
+                time: "09:00 AM",
+                title: "Fast Boat to Nusa Lembongan",
+                desc: "Enjoy a comfortable fast boat ride to Nusa Lembongan."
+            },
+            {
+                time: "09:45 AM",
+                title: "Arrival & Island Exploration",
+                desc: "Meet your private driver and begin exploring the island."
+            },
+            {
+                time: "10:00 AM",
+                title: "Visit Devil’s Tear & Dream Beach",
+                desc: "Discover dramatic ocean waves and beautiful white sand beaches."
+            },
+            {
+                time: "12:00 PM",
+                title: "Visit Yellow Bridge",
+                desc: "Explore the iconic Yellow Bridge connecting Lembongan and Ceningan."
+            },
+            {
+                time: "01:30 PM",
+                title: "Optional Snorkeling",
+                desc: "Upgrade with snorkeling at Manta Bay or Crystal Bay."
+            },
+            {
+                time: "03:30 PM",
+                title: "Return Boat to Bali",
+                desc: "Transfer back to the harbor for your fast boat to Sanur."
+            },
+            {
+                time: "04:30 PM",
+                title: "Drop-Off at Hotel",
+                desc: "Arrive in Bali and private transfer back to your hotel."
+            },
+        ],
+
+        inclusionsData: {
+            included: [
+                "Private Air-Conditioned Car & Driver",
+                "English-Speaking Local Guide",
+                "Hotel pick-up & drop-off in Bali",
+                "Return fast boat ticket",
+                "All entrance tickets",
+                "Parking Fees",
+                "Mineral water",
+                "Snorkeling equipment (if option selected)",
+            ],
+            excluded: [
+                "Meals",
+                "Personal Expenses",
+                "Travel Insurance",
+                "Optional add-on activities",
+            ],
+        },
+
+        faqData: [
+            {
+                id: 1,
+                title: "Is this a fully private tour?",
+                desc: "Yes, this is a fully private tour including private hotel transfers and island exploration."
+            },
+            {
+                id: 2,
+                title: "Does the tour include snorkeling?",
+                desc: "Snorkeling is optional and can be added to the package at Manta Bay or Crystal Bay."
+            },
+            {
+                id: 3,
+                title: "How long is the tour duration?",
+                desc: "The tour lasts approximately 8–9 hours including transfers and boat ride."
+            },
+            {
+                id: 4,
+                title: "What should I bring?",
+                desc: "Bring sunscreen, sunglasses, swimwear, towel, and comfortable footwear."
+            },
+            {
+                id: 5,
+                title: "Is hotel pick-up included?",
+                desc: "Yes, hotel pick-up and drop-off in Bali are included in the package."
+            },
+        ],
+    },
 ];
 
 export const packages = [
