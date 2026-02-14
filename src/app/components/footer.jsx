@@ -115,17 +115,6 @@ export default function Footer() {
                   </a>
 
                   <div className="flex items-center mt-4">
-                    <FiPhone className="size-4 text-primary me-3"></FiPhone>
-                    <div className="">
-                      <Link
-                        href="tel:+152534-468-854"
-                        className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"
-                      >
-                        +152 534-468-854
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="flex items-center mt-4">
                     <FaWhatsapp className="size-4 text-primary me-3" />
                     <div className="">
                       <Link

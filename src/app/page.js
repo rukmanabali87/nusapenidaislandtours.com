@@ -147,7 +147,7 @@ export default function Home() {
                     </div>
 
                     <div className="mt-6 text-center">
-                        <Link href="/" className="inline-flex items-center gap-1 text-slate-400 hover:text-primary">
+                        <Link href="/packages" className="inline-flex items-center gap-1 text-slate-400 hover:text-primary">
                             See More Tours
                             <MdArrowForward size={18} />
                         </Link>
