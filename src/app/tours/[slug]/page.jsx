@@ -9,7 +9,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-    const { slug } = params;
+    const { slug } = await params;
 
     const tour = toursData.find(
         (item) => item.slug === slug
@@ -56,8 +56,8 @@ export async function generateMetadata({ params }) {
     };
 }
 
-export default function TourDetail({ params }) {
-    const { slug } = params;
+export default async function TourDetail({ params }) {
+    const { slug } = await params;
 
     const tour = toursData.find(
         (item) => item.slug === slug
