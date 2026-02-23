@@ -1,6 +1,7 @@
 import { toursData } from "@/app/data/data";
 import TourDetailPage from "@/app/components/tour-detail-page";
 import { notFound } from "next/navigation";
+import { SITE_URL } from "@/lib/config";
 
 export function generateStaticParams() {
     return toursData.map((tour) => ({
