@@ -27,17 +27,17 @@ export async function generateMetadata({ params }) {
         description: tour.productData.desc1.slice(0, 155),
 
         alternates: {
-            canonical: `https://nusapenidaislandtours.com/tours/${tour.slug}`,
+            canonical: `${SITE_URL}/tours/${tour.slug}`,
         },
 
         openGraph: {
             title: tour.productData.title,
             description: tour.productData.desc1,
-            url: `https://nusapenidaislandtours.com/tours/${tour.slug}`,
+            url: `${SITE_URL}/tours/${tour.slug}`,
             siteName: "Nusa Penida Island Tours",
             images: [
                 {
-                    url: `https://nusapenidaislandtours.com${tour.images[0].src}`,
+                    url: `${SITE_URL}${tour.images[0].src}`,
                     width: 1200,
                     height: 630,
                     alt: tour.images[0].alt,
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }) {
             card: "summary_large_image",
             title: tour.productData.title,
             description: tour.productData.desc1,
-            images: [`https://nusapenidaislandtours.com${tour.images[0].src}`],
+            images: [`${SITE_URL}${tour.images[0].src}`],
         },
     };
 }

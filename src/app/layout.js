@@ -1,7 +1,8 @@
 import { DM_Sans, Dancing_Script } from "next/font/google";
 import "./assets/css/tailwind.css";
 import "./assets/css/materialdesignicons.min.css";
-import WhatsappButton from "./components/WhatsappButton"; 
+import WhatsappButton from "./components/WhatsappButton";
+import { SITE_URL } from "@/lib/config";
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],
@@ -23,17 +24,17 @@ export const metadata = {
         "nusa penida day trip",
   ],
     alternates: {
-        canonical: "https://www.nusapenidaislandtours.com"
+        canonical: SITE_URL,
     },
   openGraph: {
         title: "West Nusa Penida Tour – Private Day Trip",
         description:
             "Explore the western side of Nusa Penida including Kelingking Beach, Broken Beach, Angels Billabong, and Crystal Bay with a private driver.",
-        url: "https://www.nusapenidaislandtours.com",
+        url: SITE_URL,
         siteName: "Nusa Penida Island Tours",
         images: [
             {
-                url: "https://www.nusapenidaislandtours.com/images/west-penida.jpg",
+                url: `${SITE_URL}/images/west-penida.jpg`,
                 width: 1200,
                 height: 630
             }
@@ -41,9 +42,6 @@ export const metadata = {
         type: "article"
     }
 };
-
-
- 
 
 export default function RootLayout({ children }) {
   return (

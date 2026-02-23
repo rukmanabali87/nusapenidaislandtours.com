@@ -35,7 +35,7 @@ export default function Home() {
                     loop
                     playsInline
                     preload="metadata"
-                    poster="/images/hero.jpg"
+                    poster="/images/2.jpg"
                     className="absolute inset-0 w-full h-full object-cover"
                     >
                     <source src="/videos/landing-page.mp4" type="video/mp4" />
@@ -45,10 +45,10 @@ export default function Home() {
                 {/* <div className="absolute inset-0 bg-black/50"></div> */}
                 <div className="absolute inset-0 bg-slate-900/40"></div>
                 <div className="container relative h-full flex items-center">
-                    <div className="grid md:grid-cols-12 grid-cols-1 items-center w-full gap-[30px]">
+                    <div className="grid md:grid-cols-12 grid-cols-1 items-center w-full gap-7.5">
 
                         <div className="lg:col-span-8 md:col-span-7">
-                            <h5 className="text-3xl !font-dancing text-white mb-4">
+                            <h5 className="text-3xl font-dancing! text-white mb-4">
                                 Discover the Beauty of Nusa Penida
                             </h5>
 

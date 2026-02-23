@@ -2,8 +2,8 @@ import { Suspense } from "react";
 import PackagesClient from "@/app/components/packages-client";
 
 export const metadata = {
-    title: "All Tour Packages | Rukmana Bali Tour",
-    description: "Browse curated Bali tour packages by Rukmana Bali Tour, offering flexible itineraries and private travel experiences across the island.",
+    title: "All Tour Packages | Nusa Penida Island Tours",
+    description: "Browse curated Bali tour packages by Nusa Penida Island Tours, offering flexible itineraries and private travel experiences across the island.",
 };
 
 export default function Page() {
