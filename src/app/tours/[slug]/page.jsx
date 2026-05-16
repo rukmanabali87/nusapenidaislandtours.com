@@ -1,10 +1,10 @@
-import { toursData } from "@/app/data/data";
+import { products } from "@/app/data/product";
 import TourDetailPage from "@/app/components/tour-detail-page";
 import { notFound } from "next/navigation";
 import { SITE_URL } from "@/lib/config";
 
 export function generateStaticParams() {
-    return toursData.map((tour) => ({
+    return products.map((tour) => ({
         slug: tour.slug,
     }));
 }
@@ -12,7 +12,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
     const { slug } = await params;
 
-    const tour = toursData.find(
+    const tour = products.find(
         (item) => item.slug === slug
     );
 
@@ -60,7 +60,7 @@ export async function generateMetadata({ params }) {
 export default async function TourDetail({ params }) {
     const { slug } = await params;
 
-    const tour = toursData.find(
+    const tour = products.find(
         (item) => item.slug === slug
     );
 

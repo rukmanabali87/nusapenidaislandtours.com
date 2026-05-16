@@ -16,6 +16,7 @@ import TourHighlights from "@/app/components/tour-highlights";
 import TourItinerary from "@/app/components/tour-itinerary";
 import TourInclusions from "@/app/components/tour-inclusions";
 import Client from "@/app/components/client";
+import BookingCard from "@/app/components/booking-card";
 
 export default function TourDetailPage({ data }) {
 
@@ -28,6 +29,7 @@ export default function TourDetailPage({ data }) {
     };
     
     const {
+        slug,
         productData,
         images,
         tourDetailAbout,
@@ -136,7 +138,7 @@ export default function TourDetailPage({ data }) {
                     <Client />
                     </div>
 
-                    <DetailSidebar />
+                    <BookingCard slug={slug} />
                 </div>
             </div>
         </section>

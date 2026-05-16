@@ -23,7 +23,6 @@ export default function Tagline(){
                                 <ul className="list-none space-x-3">
                                     <li className="inline-flex mb-0"><a href="#!" className="text-slate-300 hover:text-primary"><FiFacebook className="size-4 align-middle" title="facebook"></FiFacebook></a></li>
                                     <li className="inline-flex ms-2 mb-0"><a href="#!" className="text-slate-300 hover:text-primary"><FiInstagram className="size-4 align-middle" title="instagram"></FiInstagram></a></li>
-                                    <li className="inline-flex ms-2 mb-0"><a href="#!" className="text-slate-300 hover:text-primary"><FiTwitter className="size-4 align-middle" title="twitter"></FiTwitter></a></li>
                                     <li className="inline-flex ms-2 mb-0"><a href="https://wa.me/6287717068139" className="text-slate-300 hover:text-primary"><FiPhone className="size-4 align-middle" title="phone"></FiPhone></a></li>
                                 </ul>
                             </li>

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "../components/navbar";
+import Search from "../components/search";
 import { toursData } from "../data/data";
 import { useSearchParams, useRouter } from "next/navigation";
 
@@ -60,6 +61,13 @@ export default function PackagesClient(){
                 </ul>
             </div>
         </section>
+
+        <section className="relative py-4 bg-gray-50 dark:bg-slate-800">
+                <div className="container relative">
+                    <Search/>
+                </div>
+        </section>
+
         <section className="relative md:py-24 py-16">
             <div className="container relative">
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">

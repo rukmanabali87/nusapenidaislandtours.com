@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Tagline from "./components/tagline";
 import Navbar from "./components/navbar";
-import Form from "./components/form";
+import Search from "./components/search";
 import TopDestinationOne from "./components/top-destination-one";
 import About from "./components/about";
 import WhyChooseUs from "./components/why-choose-us";
@@ -11,7 +11,8 @@ import WhyChooseUs from "./components/why-choose-us";
 import Footer from "./components/footer";
 import Switcher from "./components/switcher";
 
-import { toursData } from "./data/data";
+import { products } from "./data/product";
+import { productPrices } from "./data/price";
 
 import Blogs from "./components/blogs";
 import Client from "./components/client";
@@ -68,7 +69,7 @@ export default function Home() {
 
             </section>
             <div className="container relative -mt-16 z-1">
-                <Form />
+                <Search />
             </div>
             <section className="relative md:py-24 py-16 overflow-hidden">
                 <TopDestinationOne />
@@ -81,7 +82,7 @@ export default function Home() {
                     </div>
 
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mt-6 gap-6">
-                        {toursData.slice(0, 6).map((item, index) => {
+                        {products.slice(0, 6).map((item, index) => {
                             return (
                             <div className="group rounded-md shadow dark:shadow-gray-700" key={index}>
                                 <div className="relative overflow-hidden rounded-t-md shadow dark:shadow-gray-700 mx-3 mt-3">
