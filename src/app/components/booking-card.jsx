@@ -161,7 +161,7 @@ export default function BookingCard({ price = 0, slug }) {
                             Have questions? Chat with us directly on WhatsApp for fast responses.
                         </p>
                         <a
-                            href="https://wa.me/6287717068139"
+                            href="https://wa.me/6282233083081"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center gap-2 py-2 px-5 w-full tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary/80 text-white rounded-md"
