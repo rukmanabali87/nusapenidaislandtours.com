@@ -128,7 +128,7 @@ export const products = [
             included: [
                 "Private Air-Conditioned Car & Driver",
                 "English-Speaking Local Guide",
-                "Hotel pick-up & drop-off in Bali",
+                "Hotel pick-up & drop-off in Bali (Optional)",
                 "Return fast boat ticket",
                 "All entrance tickets",
                 "Parking Fees",
