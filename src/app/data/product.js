@@ -225,67 +225,72 @@ export const products = [
             {
                 time: "06:30 AM",
                 title: "Hotel Pick-up",
-                desc: "Pick-up from your hotel and transfer to Sanur Beach Harbour."
+                desc: "Pick-up from your hotel in Bali and transfer to Sanur Harbour."
             },
             {
                 time: "07:30 AM",
                 title: "Fast Boat Check-in",
-                desc: "Check-in and boarding fast boat at Sanur Harbour."
+                desc: "Check-in and boarding the fast boat at Sanur Harbour."
             },
             {
                 time: "08:00 AM",
                 title: "Depart to Nusa Penida",
-                desc: "Fast boat departure from Sanur to Nusa Penida (approx. 45 minutes)."
+                desc: "Fast boat departure from Sanur to Nusa Penida. The journey takes approximately 45 minutes."
             },
             {
                 time: "08:45 AM",
                 title: "Arrive at Nusa Penida",
-                desc: "Arrive at Nusa Penida Island and meet your local guide."
+                desc: "Arrive at Nusa Penida Harbour and meet your local driver/guide."
             },
             {
-                time: "09:15 AM",
-                title: "Atuh Beach Visit",
-                desc: "Enjoy scenic cliff views and a relaxing beach walk at Atuh Beach."
+                time: "09:30 AM",
+                title: "Diamond Beach",
+                desc: "Visit the iconic Diamond Beach and enjoy breathtaking views of the turquoise ocean and dramatic cliffs. Take your time to explore and capture memorable photos."
             },
             {
-                time: "10:30 AM",
-                title: "Diamond Beach Exploration",
-                desc: "Explore Diamond Beach and capture stunning coastal photos."
+                time: "11:00 AM",
+                title: "Tree House (Rumah Pohon Molenteng)",
+                desc: "Visit the famous Tree House and enjoy panoramic views of Nusa Penida's coastline and surrounding cliffs."
             },
             {
                 time: "12:00 PM",
                 title: "Lunch Break",
-                desc: "Enjoy an included Indonesian lunch at a local restaurant."
+                desc: "Enjoy an Indonesian lunch at a local restaurant."
             },
             {
                 time: "01:00 PM",
-                title: "Tree House Visit",
-                desc: "Photo stop at Tree House (Rumah Pohon Molenteng) with panoramic views."
+                title: "Teletubbies Hill",
+                desc: "Explore the beautiful rolling green hills of Teletubbies Hill and enjoy the peaceful natural scenery."
             },
             {
-                time: "02:30 PM",
-                title: "Return to Harbour",
-                desc: "Depart for Nusa Penida Harbour."
+                time: "02:00 PM",
+                title: "Raja Lima Beach Viewpoint",
+                desc: "Visit the Raja Lima viewpoint for spectacular panoramic views of the coastline, cliffs, and surrounding islands."
             },
             {
                 time: "03:00 PM",
-                title: "Return Fast Boat Check-in",
-                desc: "Check-in and board fast boat back to Bali."
+                title: "Return to Nusa Penida Harbour",
+                desc: "Depart for Nusa Penida Harbour and prepare for the return journey to Bali."
             },
             {
                 time: "03:30 PM",
+                title: "Fast Boat Check-in",
+                desc: "Check-in and board the fast boat back to Bali."
+            },
+            {
+                time: "04:00 PM",
                 title: "Depart to Bali",
-                desc: "Fast boat departure from Nusa Penida to Sanur."
+                desc: "Fast boat departure from Nusa Penida to Sanur Harbour."
             },
             {
-                time: "04:15 PM",
+                time: "04:45 PM",
                 title: "Arrive in Sanur",
-                desc: "Arrive at Sanur Harbour and transfer back to hotel."
+                desc: "Arrive at Sanur Harbour and transfer back to your hotel."
             },
             {
-                time: "05:00 PM",
+                time: "05:30 PM",
                 title: "Hotel Drop-off",
-                desc: "Arrive at your hotel and end of tour."
+                desc: "Arrive at your hotel and end of the tour."
             },
         ],
 
@@ -293,13 +298,17 @@ export const products = [
             included: [
                 "Private Air-Conditioned Car & Driver",
                 "English-Speaking Local Guide",
-                "Hotel pick-up & drop-off in Bali",
+                "Hotel pick-up & drop-off in Bali (Optional)",
                 "Return fast boat ticket",
-                "Indonesian lunch",
+                "Lunch at Local Restaurant",
+                "Travel Insurance",
                 "All entrance tickets",
-                "Insurance",
+                "Tree house Ticket Photo",
+                "Parking Fees",
             ],
-            excluded: ["Personal Expenses"],
+            excluded: [
+                "Personal Expenses",
+            ],
         },
 
         faqData: [
