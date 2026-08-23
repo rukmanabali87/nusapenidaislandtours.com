@@ -230,7 +230,7 @@ export const products = [
             {
                 time: "07:30 AM",
                 title: "Fast Boat Check-in",
-                desc: "Check-in and boarding the fast boat at Sanur Harbour."
+                desc: "Check-in and board the fast boat at Sanur Harbour."
             },
             {
                 time: "08:00 AM",
@@ -244,54 +244,54 @@ export const products = [
             },
             {
                 time: "09:30 AM",
+                title: "Atuh Beach",
+                desc: "Visit the beautiful Atuh Beach, surrounded by dramatic cliffs and turquoise waters. Enjoy the stunning coastal scenery and take memorable photos."
+            },
+            {
+                time: "10:45 AM",
                 title: "Diamond Beach",
-                desc: "Visit the iconic Diamond Beach and enjoy breathtaking views of the turquoise ocean and dramatic cliffs. Take your time to explore and capture memorable photos."
+                desc: "Explore the iconic Diamond Beach, famous for its white sand, crystal-clear turquoise water, and dramatic limestone cliffs."
             },
             {
-                time: "11:00 AM",
-                title: "Tree House (Rumah Pohon Molenteng)",
-                desc: "Visit the famous Tree House and enjoy panoramic views of Nusa Penida's coastline and surrounding cliffs."
-            },
-            {
-                time: "12:00 PM",
+                time: "12:30 PM",
                 title: "Lunch Break",
                 desc: "Enjoy an Indonesian lunch at a local restaurant."
             },
             {
-                time: "01:00 PM",
-                title: "Teletubbies Hill",
-                desc: "Explore the beautiful rolling green hills of Teletubbies Hill and enjoy the peaceful natural scenery."
+                time: "01:30 PM",
+                title: "Tree House (Rumah Pohon Molenteng)",
+                desc: "Visit the famous Tree House and enjoy panoramic views of the coastline and surrounding cliffs."
             },
             {
-                time: "02:00 PM",
-                title: "Raja Lima Beach Viewpoint",
-                desc: "Visit the Raja Lima viewpoint for spectacular panoramic views of the coastline, cliffs, and surrounding islands."
+                time: "02:30 PM",
+                title: "Raja Lima Beach View",
+                desc: "Visit the Raja Lima viewpoint and admire spectacular panoramic views of the coastline, cliffs, and surrounding islands."
             },
             {
-                time: "03:00 PM",
+                time: "03:30 PM",
                 title: "Return to Nusa Penida Harbour",
                 desc: "Depart for Nusa Penida Harbour and prepare for the return journey to Bali."
             },
             {
-                time: "03:30 PM",
+                time: "04:00 PM",
                 title: "Fast Boat Check-in",
                 desc: "Check-in and board the fast boat back to Bali."
             },
             {
-                time: "04:00 PM",
+                time: "04:30 PM",
                 title: "Depart to Bali",
                 desc: "Fast boat departure from Nusa Penida to Sanur Harbour."
             },
             {
-                time: "04:45 PM",
+                time: "05:15 PM",
                 title: "Arrive in Sanur",
                 desc: "Arrive at Sanur Harbour and transfer back to your hotel."
             },
             {
-                time: "05:30 PM",
+                time: "06:00 PM",
                 title: "Hotel Drop-off",
                 desc: "Arrive at your hotel and end of the tour."
-            },
+            }
         ],
 
         inclusionsData: {
