@@ -435,7 +435,7 @@ export const products = [
             },
             {
                 time: "03:00 PM",
-                title: "Snorkeling at Crystal Bay",
+                title: "4 Spots Snorkeling at Manta Bay",
                 desc: "Enjoy snorkeling in crystal-clear waters and discover vibrant coral reefs and tropical fish."
             },
             {
@@ -459,15 +459,18 @@ export const products = [
             included: [
                 "Private Air-Conditioned Car & Driver",
                 "English-Speaking Local Guide",
-                "Hotel pick-up & drop-off in Bali",
+                "Hotel pick-up & drop-off in Bali (Optional)",
                 "Return fast boat ticket",
+                "Lunch at Local Restaurant",
+                "Travel Insurance",
                 "All entrance tickets",
+                "Photo and Video Documentation by Gopro",
+                "Snorkeling Equipment",
+                "Towels",
                 "Parking Fees",
             ],
             excluded: [
-                "Meals",
                 "Personal Expenses",
-                "Travel Insurance",
             ],
         },
 
@@ -632,15 +635,16 @@ export const products = [
             included: [
                 "Private Air-Conditioned Car & Driver",
                 "English-Speaking Local Guide",
-                "Hotel pick-up & drop-off in Bali",
+                "Hotel pick-up & drop-off in Bali (Optional)",
                 "Return fast boat ticket",
+                "Lunch at Local Restaurant",
+                "Travel Insurance",
                 "All entrance tickets",
+                "Tree House Ticket Photo",
                 "Parking Fees",
             ],
             excluded: [
-                "Meals",
                 "Personal Expenses",
-                "Travel Insurance",
             ],
         },
 
