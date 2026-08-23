@@ -557,60 +557,75 @@ export const products = [
 
         itineraryData: [
             {
+                time: "06:30 AM",
+                title: "Hotel Pick-up",
+                desc: "Pick-up from your hotel in Bali and transfer to Sanur Harbour."
+            },
+            {
+                time: "07:30 AM",
+                title: "Fast Boat Check-in",
+                desc: "Check-in and board the fast boat at Sanur Harbour."
+            },
+            {
                 time: "08:00 AM",
-                title: "Arrival at Nusa Penida & Meet Driver",
-                desc: "Arrive at Nusa Penida harbor and meet your local driver to begin the tour."
+                title: "Depart to Nusa Penida",
+                desc: "Fast boat departure from Sanur to Nusa Penida. The journey takes approximately 45 minutes."
             },
             {
-                time: "09:00 AM",
-                title: "Kelingking Beach",
-                desc: "Enjoy the iconic T-Rex cliff view and take stunning photos from the viewpoint."
+                time: "08:45 AM",
+                title: "Arrive at Nusa Penida",
+                desc: "Arrive at Nusa Penida Harbour and meet your local driver/guide."
             },
             {
-                time: "10:30 AM",
-                title: "Broken Beach",
-                desc: "Visit the famous natural rock arch overlooking the ocean."
+                time: "09:30 AM",
+                title: "Diamond Beach",
+                desc: "Visit the iconic Diamond Beach, famous for its crystal-clear turquoise water, white sand, and dramatic limestone cliffs. Enjoy the breathtaking coastal scenery and capture memorable photos."
             },
             {
-                time: "11:15 AM",
-                title: "Angel Billabong",
-                desc: "Explore the beautiful natural infinity pool formation by the sea."
+                time: "11:00 AM",
+                title: "Tree House (Rumah Pohon Molenteng)",
+                desc: "Visit the famous Tree House and enjoy panoramic views of Nusa Penida's stunning coastline and surrounding cliffs."
             },
             {
                 time: "12:30 PM",
-                title: "Lunch Time",
-                desc: "Enjoy lunch at a local restaurant (personal expense)."
+                title: "Lunch Break",
+                desc: "Enjoy an Indonesian lunch at a local restaurant."
             },
             {
-                time: "02:00 PM",
-                title: "Diamond Beach",
-                desc: "Discover the white sandy beach and dramatic limestone cliffs."
+                time: "01:30 PM",
+                title: "Kelingking Beach",
+                desc: "Visit the iconic Kelingking Beach viewpoint and admire the famous T-Rex-shaped cliff overlooking the turquoise ocean."
             },
             {
-                time: "03:00 PM",
-                title: "Atuh Beach",
-                desc: "Relax and take photos at one of the most scenic beaches in East Nusa Penida."
+                time: "02:45 PM",
+                title: "Paluang Cliff",
+                desc: "Continue to Paluang Cliff, one of Nusa Penida's spectacular viewpoints. Enjoy panoramic ocean views and take memorable photos from the unique cliffside viewpoint."
+            },
+            {
+                time: "03:30 PM",
+                title: "Return to Nusa Penida Harbour",
+                desc: "Depart for Nusa Penida Harbour and prepare for the return journey to Bali."
             },
             {
                 time: "04:00 PM",
-                title: "Rumah Pohon Molenteng",
-                desc: "Capture panoramic views from the famous tree house viewpoint."
+                title: "Fast Boat Check-in",
+                desc: "Check-in and board the fast boat back to Bali."
             },
             {
-                time: "05:30 PM",
-                title: "Crystal Bay",
-                desc: "Unwind by the beach and enjoy the peaceful coastal atmosphere."
+                time: "04:30 PM",
+                title: "Depart to Bali",
+                desc: "Fast boat departure from Nusa Penida to Sanur Harbour."
             },
             {
-                time: "07:30 PM",
-                title: "Return to Harbor",
-                desc: "Transfer back to the harbor for your boat departure."
+                time: "05:15 PM",
+                title: "Arrive in Sanur",
+                desc: "Arrive at Sanur Harbour and transfer back to your hotel."
             },
             {
-                time: "08:00 PM",
-                title: "Tour Ends",
-                desc: "Departure from Nusa Penida and end of the tour."
-            },
+                time: "06:00 PM",
+                title: "Hotel Drop-off",
+                desc: "Arrive at your hotel and end of the tour."
+            }
         ],
 
         inclusionsData: {
