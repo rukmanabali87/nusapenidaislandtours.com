@@ -11,6 +11,7 @@ import Switcher from '../components/switcher';
 
 import { teamData } from "../data/data";
 
+import { HiChevronRight } from "react-icons/hi";
 import {FiFacebook, FiInstagram, FiLinkedin} from "react-icons/fi"
 import TourImageSlider from '../components/tour-image-slider';
 
@@ -18,18 +19,29 @@ export default function Aboutus(){
     return(
         <>
         <Navbar navclass="defaultscroll is-sticky" navlight={true} manuclass="!justify-end nav-light"/>
-        <section className="relative table w-full items-center py-36 bg-[url('/images/bg/cta.jpg')] bg-top bg-no-repeat bg-cover">
+        <section className="relative w-full py-36 overflow-hidden">
+            <Image
+                src="/images/bg/wide-view-kelingking-beach.jpg"
+                alt="About Us"
+                fill
+                priority
+                className="object-cover object-center"
+            />
+
             <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
+
             <div className="container relative">
                 <div className="grid grid-cols-1 pb-8 text-center mt-10">
-                    <h3 className="text-4xl leading-normal tracking-wider font-semibold text-white">Nusa Penida Island Tours</h3>
+                    <h3 className="text-4xl leading-normal tracking-wider font-semibold text-white">
+                    About Us
+                    </h3>
                 </div>
             </div>
-            
+
             <div className="absolute text-center z-10 bottom-5 start-0 end-0 mx-3">
                 <ul className="tracking-[0.5px] mb-0 inline-block">
                     <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white/50 hover:text-white"><Link href="/">Nusa Penida Island Tours</Link></li>
-                    <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><i className="mdi mdi-chevron-right"></i></li>
+                    <li className="inline-block text-base text-white/50 mx-0.5 ltr:rotate-0 rtl:rotate-180"><HiChevronRight className="text-xl inline-block align-middle" /></li>
                     <li className="inline-block uppercase text-[13px] font-bold duration-500 ease-in-out text-white" aria-current="page">About Us</li>
                 </ul>
             </div>
@@ -40,9 +52,9 @@ export default function Aboutus(){
 
             <div className="container relative md:mt-24 mt-16">
                 <div className="grid grid-cols-1 pb-6 text-center">
-                    <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Team</h3>
+                    <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">Our Partners</h3>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                    <p className="text-slate-400 max-w-xl mx-auto">Partner companies that work with us to provide the best service to customers.</p>
                 </div>
 
                 <div className="grid md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
