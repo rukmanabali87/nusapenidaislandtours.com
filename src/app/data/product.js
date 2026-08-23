@@ -130,13 +130,13 @@ export const products = [
                 "English-Speaking Local Guide",
                 "Hotel pick-up & drop-off in Bali (Optional)",
                 "Return fast boat ticket",
+                "Lunch at Local Restaurant",
+                "Travel Insurance",
                 "All entrance tickets",
                 "Parking Fees",
             ],
             excluded: [
-                "Meals",
                 "Personal Expenses",
-                "Travel Insurance",
             ],
         },
 
