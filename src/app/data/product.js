@@ -303,7 +303,7 @@ export const products = [
                 "Lunch at Local Restaurant",
                 "Travel Insurance",
                 "All entrance tickets",
-                "Tree house Ticket Photo",
+                "Tree House Ticket Photo",
                 "Parking Fees",
             ],
             excluded: [
