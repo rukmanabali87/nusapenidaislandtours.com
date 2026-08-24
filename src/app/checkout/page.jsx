@@ -129,7 +129,7 @@ Please confirm my booking. Thank you!`;
         <Navbar navclass="defaultscroll is-sticky" navlight={true} manuclass="!justify-end nav-light" />
 
         <section className="relative w-full py-15 bg-primary overflow-hidden">
-            <Image src="/images/bg/cta.jpg" alt="Travel Blogs" fill priority className="object-cover object-center" />
+            <Image src="/images/bg/wide-view-kelingking-beach.jpg" alt="Travel Blogs" fill priority className="object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900"></div>
             <div className="container relative">
                 <div className="grid grid-cols-1 pb-8 text-center mt-10">

@@ -1,8 +1,9 @@
 import { DM_Sans, Dancing_Script } from "next/font/google";
+import Script from "next/script";
 import "./assets/css/tailwind.css";
 import "./assets/css/materialdesignicons.min.css";
 import WhatsappButton from "./components/WhatsappButton";
-import { SITE_URL } from "@/lib/config";
+import { SITE_URL } from "@/lib/config";  
 
 const dm_sans = DM_Sans({
   subsets: ["latin"],
@@ -47,12 +48,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="light scroll-smooth" dir="ltr">
       
-      <body className={`${dm_sans.variable} ${dancing_script.variable}  bg-white dark:bg-slate-900`}>{children}<WhatsappButton /></body>
+      <body className={`${dm_sans.variable} ${dancing_script.variable}  bg-white dark:bg-slate-900`}>
+        <Script 
+            src="https://www.googletagmanager.com/gtag/js?id=AW-861201458" 
+            strategy="afterInteractive" 
+        />
+        <Script id="google-ads-config" strategy="afterInteractive">
+            {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-861201458');
+            `}
+        </Script>
+
+        {children}
+
+        <WhatsappButton />
+        
+        </body>
     </html>
   );
 }
-
-<script
-  src="https://app.sandbox.midtrans.com/snap/snap.js"
-  data-client-key={process.env.NEXT_PUBLIC_MIDTRANS_CLIENT_KEY}
-/>
