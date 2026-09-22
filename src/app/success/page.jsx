@@ -99,7 +99,7 @@ function SuccessContent() {
                         <div className="text-center print:hidden mb-8">
                             <FiCheckCircle className="mx-auto h-16 w-16 text-primary mb-4" />
                             <h2 className="text-3xl font-bold text-gray-900">Payment Successful!</h2>
-                            <p className="mt-2 text-gray-500">Thank you for booking with Rukmana Bali Tour.</p>
+                            <p className="mt-2 text-gray-500">Thank you for booking with Nusa Penida Island Tours.</p>
                         </div>
 
                         {/* Logo & Judul Voucher (Tampil di Layar dan Saat Dicetak) */}
@@ -107,7 +107,7 @@ function SuccessContent() {
                             <div className="flex justify-center mb-3 mt-5">
                                 <Image 
                                     src="/images/logo-nusa-penida-icon.png" 
-                                    alt="Rukmana Bali Tour" 
+                                    alt="Nusa Penida Island Tours" 
                                     width={120} 
                                     height={25} 
                                     priority
