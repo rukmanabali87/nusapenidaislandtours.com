@@ -75,7 +75,7 @@ function SuccessContent() {
                 <Navbar navclass="defaultscroll is-sticky" navlight={true} manuclass="!justify-end nav-light"/>
             </div>
 
-            <section className="relative table w-full py-20 lg:py-24 bg-[#157F84] print:hidden">
+            <section className="relative table w-full py-20 lg:py-24 bg-darkblue print:hidden">
                 <div className="container relative">
                     <div className="grid grid-cols-1 text-center mt-10">
                         <h3 className="text-3xl leading-normal font-bold text-white">Booking Success</h3>
