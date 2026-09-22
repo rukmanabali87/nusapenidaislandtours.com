@@ -1133,12 +1133,12 @@ export const footerSocial = [
 
 export const footerCompany = [
     {
-        name: 'About us',
-        link: '/aboutus'
+        name: 'Terms & Conditions',
+        link: '/terms'
     },
     {
-        name: 'Term & Condition',
-        link: '/services'
+        name: 'About us',
+        link: '/aboutus'
     },
     {
         name: 'Blog',

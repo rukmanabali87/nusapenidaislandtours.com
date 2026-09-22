@@ -111,6 +111,16 @@ export default function TourDetailPage({ data }) {
                         })}
                     </ul>
 
+                    {/* Button Check Price untuk tampilan Mobile */}
+                    <div className="mt-6 md:hidden">
+                        <a
+                            href="#sidebar"
+                            className="w-full py-2 px-5 block text-center font-semibold tracking-wide align-middle duration-500 text-base bg-primary hover:bg-primary/90 text-white rounded-md shadow"
+                        >
+                            Check Price
+                        </a>
+                    </div>
+
                     <div className="mt-6">
                         <h5 className="text-lg font-semibold">Tour Descriptions:</h5>
                         <p className="text-slate-400 mt-6">{productData.desc1}</p>
@@ -136,9 +146,10 @@ export default function TourDetailPage({ data }) {
                     </div>
 
                     <Client />
+                    </div >
+                    <div id="sidebar" className="lg:col-span-4 md:col-span-5 scroll-mt-24">
+                        <BookingCard slug={slug} />
                     </div>
-
-                    <BookingCard slug={slug} />
                 </div>
             </div>
         </section>

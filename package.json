@@ -10,7 +10,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "midtrans-client": "^1.4.3",
     "next": "^16.0.7",
     "next-sitemap": "^4.2.3",
     "react": "19.1.0",
