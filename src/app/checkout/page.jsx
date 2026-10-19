@@ -4,6 +4,7 @@ import React, { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { productPrices } from "@/app/data/price";
 import { HiChevronRight } from "react-icons/hi";
+import { FaWhatsapp } from "react-icons/fa";
 
 import Navbar from "@/app/components/navbar";
 import Footer from '../components/footer';
@@ -13,10 +14,11 @@ import Switcher from '../components/switcher';
 function CheckoutContent() {    
     const searchParams = useSearchParams();
     
-    // 1. Tangkap Data dari URL
+    // 1. Tangkap Data dari URL (termasuk method pembayaran: xendit / whatsapp)
     const slug = searchParams.get('slug');
     const pax = Number(searchParams.get('pax')) || 1;
     const type = searchParams.get('type') || '';
+    const method = searchParams.get('method') || 'xendit'; // Default ke xendit jika kosong
     const dateQuery = searchParams.get('date');
     const date = dateQuery ? new Date(dateQuery).toLocaleDateString('en-US', {
         weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'
@@ -49,7 +51,7 @@ function CheckoutContent() {
         ? slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ') 
         : 'Tour';
 
-    // 4. API Pembayaran Xendit
+    // 4. API Pembayaran Xendit (Online Payment)
     const handleCheckout = async () => {
         if (!name || !email || !phone || !nationality || !pickupTime) {
             alert("Please fill in all contact information first!");
@@ -83,7 +85,6 @@ function CheckoutContent() {
             const data = await response.json();
 
             if (data.invoiceUrl) {
-                // Redirect ke halaman Xendit
                 window.location.href = data.invoiceUrl; 
             } else {
                 alert("Failed to process payment. Please try again later.");
@@ -93,6 +94,40 @@ function CheckoutContent() {
             console.error("Terjadi kesalahan:", error);
             alert("A network error occurred. Please check your connection and try again.");
         }
+    };
+
+    // 5. Alur Pay on the Spot (Direct ke WhatsApp Admin)
+    const handleWhatsAppCheckout = () => {
+        if (!name || !email || !phone || !nationality || !pickupTime) {
+            alert("Please fill in all contact information first!");
+            return;
+        }
+
+        // Susun teks pesan WhatsApp yang rapi dan profesional
+        const message = `*NEW BOOKING (PAY ON THE SPOT)*\n\n` +
+            `*Tour Package:* ${formattedTitle} (${type})\n` +
+            `*Date:* ${date}\n` +
+            `*Pickup Time:* ${pickupTime}\n` +
+            `*Travelers:* ${pax} Person(s)\n` +
+            `*Total Price:* Rp ${totalPrice.toLocaleString("id-ID")}\n\n` +
+            `*CUSTOMER DETAILS*\n` +
+            `- Name: ${name}\n` +
+            `- Email: ${email}\n` +
+            `- WhatsApp: ${phone}\n` +
+            `- Nationality: ${nationality}\n` +
+            `- Pickup Point: ${pickupPoint || '-'}\n` +
+            `- Note: ${note || '-'}\n\n` +
+            `_I would like to book this tour with Pay on the Spot payment method._`;
+
+        // Nomor WhatsApp Admin Rukmana Bali Tour (Ganti dengan nomor admin Anda jika perlu)
+        const adminWhatsApp = "6282233083081"; 
+        
+        // Encode pesan ke format URL
+        const encodedMessage = encodeURIComponent(message);
+        const waUrl = `https://wa.me/${adminWhatsApp}?text=${encodedMessage}`;
+
+        // Buka WhatsApp di tab baru
+        window.open(waUrl, '_blank');
     };
 
     return (
@@ -203,11 +238,28 @@ function CheckoutContent() {
                                         <span className="font-bold text-primary text-xl">Rp {totalPrice.toLocaleString("id-ID")}</span>
                                     </div>
 
-                                    <button onClick={handleCheckout} className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary/80 text-white rounded-md w-full disabled:opacity-60">
-                                        Pay Now
-                                    </button>
+                                    {/* Tombol Dinamis Berdasarkan Metode yang Dipilih */}
+                                    {method === 'whatsapp' ? (
+                                        <button 
+                                            onClick={handleWhatsAppCheckout} 
+                                            className="py-2.5 px-5 inline-flex items-center justify-center gap-2 tracking-wide align-middle duration-500 text-base text-center bg-emerald-600 hover:bg-emerald-700 text-white rounded-md w-full font-medium"
+                                        >
+                                            <FaWhatsapp className="w-5 h-5" />
+                                            Send Booking to WhatsApp
+                                        </button>
+                                    ) : (
+                                        <button 
+                                            onClick={handleCheckout} 
+                                            className="py-2.5 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary/80 text-white rounded-md w-full font-medium"
+                                        >
+                                            Pay Now (Online Payment)
+                                        </button>
+                                    )}
+
                                     <p className="text-xs text-center text-slate-400 mt-3">
-                                        Secure payment powered by Xendit.
+                                        {method === 'whatsapp' 
+                                            ? "You will be redirected to WhatsApp to confirm your booking." 
+                                            : "Secure payment powered by Xendit."}
                                     </p>
                                 </div>
                             </div>

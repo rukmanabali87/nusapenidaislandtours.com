@@ -27,27 +27,28 @@ export default function BookingCard({ price = 0, slug }) {
         }
     }, [slug, currentProductPrices]);
 
-    // 1. Buat variable penampung agar saat input kosong, pencarian harga tidak error
     const effectiveTraveler = (traveler === '' || traveler < 1) ? 2 : traveler;
 
     if (currentProductPrices && packageType) {
         const typePrices = currentProductPrices[packageType]; 
-        
         const maxPaxInData = Math.max(...Object.keys(typePrices).map(Number));
-
         const selectedPax = effectiveTraveler > maxPaxInData ? maxPaxInData : effectiveTraveler;
-        
-        // 2. Berikan fallback || price untuk memastikan nilai tidak undefined
         unitPrice = typePrices[selectedPax] || price;
     }
     
-    // 3. Jika input kosong, tampilkan total harga Rp 0
     const totalPrice = unitPrice * (traveler === '' ? 0 : traveler);
 
+    // Alur 1: Reserve Now (Online Payment via Xendit)
     const goToCheckout = () => {
-        // Jangan biarkan user checkout dengan data kosong, set default ke 1
         const finalTraveler = (traveler === '' || traveler < 1) ? 2 : traveler;
-        const url = `/checkout?slug=${slug}&pax=${finalTraveler}&type=${encodeURIComponent(packageType)}&date=${startDate.toISOString()}`;
+        const url = `/checkout?slug=${slug}&pax=${finalTraveler}&type=${encodeURIComponent(packageType)}&date=${startDate.toISOString()}&method=xendit`;
+        router.push(url);
+    };
+
+    // Alur 2: Pay on the Spot (Booking form -> WhatsApp Admin)
+    const goToWhatsAppCheckout = () => {
+        const finalTraveler = (traveler === '' || traveler < 1) ? 2 : traveler;
+        const url = `/checkout?slug=${slug}&pax=${finalTraveler}&type=${encodeURIComponent(packageType)}&date=${startDate.toISOString()}&method=whatsapp`;
         router.push(url);
     };
 
@@ -59,7 +60,7 @@ export default function BookingCard({ price = 0, slug }) {
                 {/* Booking Card */}
                 <div className="p-4 rounded-md shadow dark:shadow-gray-700">
                     <div className='flex flex-col'>
-                        <h3 className="text-xl font-bold text-center"> Booking </h3>
+                        <h3 className="text-xl font-bold text-center"> Price </h3>
                     </div>
                     
                     <div className="mt-4">
@@ -92,7 +93,6 @@ export default function BookingCard({ price = 0, slug }) {
                                         type="number"
                                         min="1"
                                         value={traveler}
-                                        // 4. Update fungsi onChange
                                         onChange={(e) => {
                                             const val = e.target.value;
                                             setTraveler(val === '' ? '' : Number(val));
@@ -140,37 +140,28 @@ export default function BookingCard({ price = 0, slug }) {
                             </div>
                         </div>
 
-                        {/* 5. Disable button jika traveler kosong atau kurang dari 1 */}
-                        <button 
-                            onClick={goToCheckout} 
-                            disabled={traveler === '' || traveler < 1}
-                            className="py-2 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary/80 text-white rounded-md w-full disabled:opacity-60 disabled:cursor-not-allowed"
-                        >
-                            Reserve Now
-                        </button> 
+                        {/* Dua Tombol Metode Pembayaran */}
+                        <div className="flex flex-col gap-3">
+                            <button 
+                                onClick={goToCheckout} 
+                                disabled={traveler === '' || traveler < 1}
+                                className="py-2.5 px-5 inline-block tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary/80 text-white rounded-md w-full disabled:opacity-60 disabled:cursor-not-allowed font-medium"
+                            >
+                                Reserve Now
+                            </button> 
+
+                            <button 
+                                onClick={goToWhatsAppCheckout} 
+                                disabled={traveler === '' || traveler < 1}
+                                className="py-2.5 px-5 tracking-wide align-middle duration-500 text-base text-center bg-emerald-600 hover:bg-emerald-700 text-white rounded-md w-full disabled:opacity-60 disabled:cursor-not-allowed font-medium flex items-center justify-center gap-2"
+                            >
+                                <FaWhatsapp className="w-5 h-5" />
+                                Pay on the Spot
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <div className="p-4 rounded-md shadow dark:shadow-gray-700">
-                    <div className='flex flex-col items-center'>
-                        <div className="flex items-center justify-center w-14 h-14 bg-green-100 dark:bg-green-900/30 rounded-full mb-3">
-                            <FaWhatsapp className="w-8 h-8 text-primary" />
-                        </div>
-                        <h3 className="text-xl font-bold text-center mb-1">WhatsApp Us</h3>
-                        <p className="text-sm text-gray-500 dark:text-gray-400 text-center mb-4">
-                            Have questions? Chat with us directly on WhatsApp for fast responses.
-                        </p>
-                        <a
-                            href="https://wa.me/6282233083081"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center justify-center gap-2 py-2 px-5 w-full tracking-wide align-middle duration-500 text-base text-center bg-primary hover:bg-primary/80 text-white rounded-md"
-                        >
-                            <FaWhatsapp className="w-5 h-5" />
-                            Chat on WhatsApp
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
         </>
