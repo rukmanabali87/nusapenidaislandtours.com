@@ -1005,39 +1005,39 @@ export const packages = [
 export const ClientData = [
     {
         image: '/images/client/01.jpg',
-        desc: '" It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. "',
+        desc: '" Amazing trip and the smirking excursions were the best. Saw alot and def would recommends this tour to everyone. "',
         name: 'Calvin Carlo',
-        possition: 'Manager'
+        possition: 'Traveler'
     },
     {
         image: '/images/client/02.jpg',
-        desc: '"The most well-known dummy text is the Lorem Ipsum, which is said to have originated in the 16th century."',
+        desc: '" Great day out with the boat trip and sight seeing, we saw manta rays and had an excellent experience snorkelling with the fish. Really good service by Putra - couldn’t recommend him enough. "',
         name: 'Christa Smith',
-        possition: 'Manager'
+        possition: 'Traveler'
     },
     {
         image: '/images/client/03.jpg',
-        desc: '" One disadvantage of Lorum Ipsum is that in Latin certain letters appear more frequently than others. "',
+        desc: '" The guide was very punctual, yet provided ample amount of time to see the places. Very satisfying experience within 12 hours. "',
         name: 'Jemina CLone',
-        possition: 'Manager'
+        possition: 'Traveler'
     },
     {
         image: '/images/client/04.jpg',
-        desc: '" Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. "',
+        desc: '" Really amazing view and unique experience. Our tour guide Cappuccino is really experienced and always helps us find the best spot for photo taking. The view is incredible and the food is quite good too. Definitely worth to visit! "',
         name: 'Smith Vodka',
-        possition: 'Manager'
+        possition: 'Traveler'
     },
     {
         image: '/images/client/05.jpg',
-        desc: '" There is now an abundance of readable dummy texts. These are usually used when a text is required. "',
+        desc: '" The person service we received during this adventure was amazing! Moncoon was so knowledgeable and stayed with us during this entire journey. "',
         name: 'Cristino Murfi',
-        possition: 'Manager'
+        possition: 'Traveler'
     },
     {
         image: '/images/client/06.jpg',
-        desc: '" According to most sources, Lorum Ipsum can be traced back to a text composed by Cicero. "',
+        desc: '" Fantastic trip, guide was brilliant and talked to us throughout. Guide took us to specific spots for photo opportunities! Penida was beautiful! Lunch was very good. "',
         name: 'Cristino Murfi',
-        possition: 'Manager'
+        possition: 'Traveler'
     },
 ]
 
